@@ -33,7 +33,7 @@ IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets
 
 Data Location: https://datasets.imdbws.com/
 
-**IMDb data files :
+**IMDb data files :**
 - title.akas.tsv.gz:  (8 x 37476209)  Contains alternative titles, regions, languages, and attributes for IMDb titles.
 - title.basics.tsv.gz: (9 x 10234938)  Provides fundamental details about IMDb titles, including type, primary title, and genres.
 - title.crew.tsv.gz:  (3 x 10234938) Includes director and writer information for IMDb titles.
@@ -42,7 +42,7 @@ Data Location: https://datasets.imdbws.com/
 - title.ratings.tsv.gz: (3 x 1359060) Provides user ratings and vote counts for IMDb titles.
 - name.basics.tsv.gz:  (6 x 12923131) Contains details about individuals in the entertainment industry, including their 
 
-**Attributes  :
+**Attributes  :**
 **title.akas.tsv.gz - Contains the following information for titles:**
 - titleId (string) - a tconst, an alphanumeric unique identifier of the title
 - ordering (integer) – a number to uniquely identify rows for a given title Id
@@ -97,7 +97,7 @@ Data Location: https://datasets.imdbws.com/
 - knownForTitles (array of tconsts) – titles for a person
 
 ## <a name="Database_Tools/Technologies"></a> Database Tools/Technologies
-**MySQL Workbench: A comprehensive tool for MySQL database modeling.
-**Jupyter Notebook:
+**MySQL Workbench: A comprehensive tool for MySQL database modeling.**
+**Jupyter Notebook:**
 - Extract, Transform, Load (ETL) with Python
 - Python for Data Visualization
