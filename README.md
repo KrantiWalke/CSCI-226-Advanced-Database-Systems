@@ -2,9 +2,9 @@
 ## Final Project (Fall 2023)
 
 ## Teammates:
-### Kranti Walke
-### Raksha Jagadish 
-### Vaideki Muralitharan
+- Kranti Walke
+- Raksha Jagadish 
+- Vaideki Muralitharan
 
 
 
