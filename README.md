@@ -98,7 +98,10 @@ Attributes  :
 - knownForTitles (array of tconsts) – titles for a person
 
 ## <a name="Database_Tools/Technologies"></a> Database Tools/Technologies
-MySQL Workbench: A comprehensive tool for MySQL database modeling.
+
+MySQL Workbench: 
+- A comprehensive tool for MySQL database modeling.
+
 Jupyter Notebook:
 - Extract, Transform, Load (ETL) with Python
 - Python for Data Visualization
