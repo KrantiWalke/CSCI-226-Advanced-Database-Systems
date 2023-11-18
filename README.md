@@ -16,12 +16,12 @@
 
 ## <a name="Data_Domain_-_IMDb_(Internet_Movie_Database)"></a> Data Domain - IMDb (Internet Movie Database)
 
-**Serves as an online repository that compiles information pertaining to the entertainment industry.
-**We can find information about movies, TV shows, actors, user ratings, and other aspects of the film and television industry.
-**The IMDb Non-Commercial Datasets, 
+Serves as an online repository that compiles information pertaining to the entertainment industry.
+We can find information about movies, TV shows, actors, user ratings, and other aspects of the film and television industry.
+The IMDb Non-Commercial Datasets, 
 - offer a well-organized collection of data  that are available for public use without commercial purposes.
-**Have a wide range of details about movies and TV shows, making it a one-stop hub for all things related to the big and small screen.
-**IMDb's data is derived from:
+Have a wide range of details about movies and TV shows, making it a one-stop hub for all things related to the big and small screen.
+IMDb's data is derived from:
 - movie studios, production companies, user contributions, official press releases, and publicly available information.
 
 
@@ -33,7 +33,7 @@ IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets
 
 Data Location: https://datasets.imdbws.com/
 
-**IMDb data files :**
+IMDb data files :
 - title.akas.tsv.gz:  (8 x 37476209)  Contains alternative titles, regions, languages, and attributes for IMDb titles.
 - title.basics.tsv.gz: (9 x 10234938)  Provides fundamental details about IMDb titles, including type, primary title, and genres.
 - title.crew.tsv.gz:  (3 x 10234938) Includes director and writer information for IMDb titles.
@@ -42,7 +42,8 @@ Data Location: https://datasets.imdbws.com/
 - title.ratings.tsv.gz: (3 x 1359060) Provides user ratings and vote counts for IMDb titles.
 - name.basics.tsv.gz:  (6 x 12923131) Contains details about individuals in the entertainment industry, including their 
 
-**Attributes  :**
+Attributes  :
+
 **title.akas.tsv.gz - Contains the following information for titles:**
 - titleId (string) - a tconst, an alphanumeric unique identifier of the title
 - ordering (integer) – a number to uniquely identify rows for a given title Id
@@ -97,7 +98,7 @@ Data Location: https://datasets.imdbws.com/
 - knownForTitles (array of tconsts) – titles for a person
 
 ## <a name="Database_Tools/Technologies"></a> Database Tools/Technologies
-**MySQL Workbench: A comprehensive tool for MySQL database modeling.**
-**Jupyter Notebook:**
+MySQL Workbench: A comprehensive tool for MySQL database modeling.
+Jupyter Notebook:
 - Extract, Transform, Load (ETL) with Python
 - Python for Data Visualization
