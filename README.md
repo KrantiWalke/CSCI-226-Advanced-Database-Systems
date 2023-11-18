@@ -10,11 +10,11 @@
 
 
 ## Table of Contents:
-+ [Data Domain - IMDb (Internet Movie Database)](#Data Domain - IMDb (Internet Movie Database)) </br>
-+ [Sources for Datasets](#Sources for Datasets) </br>
-+ [Database Tools/Technologies](#Database Tools/Technologies) </br>
++ [Data_Domain_-_IMDb_(Internet_Movie_Database)](#Data Domain - IMDb (Internet Movie Database)) </br>
++ [Sources_for_Datasets](#Sources for Datasets) </br>
++ [Database_Tools/Technologies](#Database Tools/Technologies) </br>
 
-## <a name="Data Domain - IMDb (Internet Movie Database)"></a> Data Domain - IMDb (Internet Movie Database)
+## <a name="Data_Domain_-_IMDb_(Internet_Movie_Database)"></a> Data Domain - IMDb (Internet Movie Database)
 
 **Serves as an online repository that compiles information pertaining to the entertainment industry.
 **We can find information about movies, TV shows, actors, user ratings, and other aspects of the film and television industry.
@@ -27,11 +27,11 @@
 
 
  
-## <a name="Sources for Datasets"></a> Sources for Datasets
+## <a name="Sources_for_Datasets"></a> Sources for Datasets
 
-**IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets/
+IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets/
 
-**Data Location: https://datasets.imdbws.com/
+Data Location: https://datasets.imdbws.com/
 
 **IMDb data files :
 - title.akas.tsv.gz:  (8 x 37476209)  Contains alternative titles, regions, languages, and attributes for IMDb titles.
@@ -96,7 +96,7 @@
 - primaryProfession (array of strings) – the top-3 professions of the person
 - knownForTitles (array of tconsts) – titles for a person
 
-## <a name="Database Tools/Technologies"></a> Database Tools/Technologies
+## <a name="Database_Tools/Technologies"></a> Database Tools/Technologies
 **MySQL Workbench: A comprehensive tool for MySQL database modeling.
 **Jupyter Notebook:
 - Extract, Transform, Load (ETL) with Python
