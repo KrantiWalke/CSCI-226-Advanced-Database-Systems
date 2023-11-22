@@ -88,9 +88,6 @@ The domain for the IMDb Non-Commercial Datasets is the entertainment industry, s
 IMDb's data is derived from:
 -movie studios, production companies, user contributions, official press releases, and publicly available information.
 
-
-
- 
 # 2.	Dataset Details	
 ## 2.1 Sources for original dataset
 IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets/
@@ -167,6 +164,47 @@ Attributes  :
 ## 4.1 Feature Pre-processing
 The Feature Pre-processing of IMDB data is done using python. The IMDB_Feature_Pre-processing.py reads in the 7 data files and does the feature preprocessing of the IMDb data. After which, the desired set of tables are output as tab-separate-value (tsv) files.
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/097dcb10-b3cd-47e4-97cb-9e16b2a8f613)
+
+# 5.	Database Schema
+### 5.1 Build MySQL database
+To build the IMDB MySQL database we followed the below steps:
+
+### 5.1.1	Install MySQL workbench: 
+https://dev.mysql.com/doc/workbench/en/wb-installing-windows.html
+### 5.1.2	Creating a new MySQL connection: 
+https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html
+### 5.1.3	Create IMDb database in MySQL
+a)	Create a schema and set INFILE ACCESS:
+ ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/db1417fb-73c3-41b0-9414-0f919f55362e)
+
+b)	Use the schema to create a table in the database: imdb_TableCreation.sql
+Includes:  – Key Definitions – Referential Integrity Constraints
+Example: Movie dataset
+ ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d8c5e9d0-4c2f-49cc-8495-b2687ee2f097)
+
+c)	Create a trigger for each table operation: imdb_TriggereCreation.sql
+ ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ee378623-de6c-4fd1-b8b0-a67d6ec8f250)
+
+d)	Load the dataset in table: imdb_LoadDataset.sql
+ ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/05668bd4-c7cc-4d8b-949b-94e88390a37a)
+
+
+e)	Create Stored Procedures for certain operations like Add New Movie or Get Movie Details: imdb_StoredProceduresCreation.sql
+ ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/830fbeff-8db4-4e8f-8bf9-1836d82c13c7)
+
+## 5.2 Below are the final created tables in our database:
+ ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/1b3096ad-0a4a-4774-999b-e2adaf03fe8b)
+
+## 5.3 Each table includes required columns, indexes, Foreign Keys, Triggers:
+ ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/27ff5980-ef20-4e26-a04a-7a723ad1e4c6)
+
+## 5.4 All the Stored procedures created using imdb_StoredProceduresCreation.sql
+  
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b31f0570-0dae-432c-9a5c-f5a6dfb47a91) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/25cbe354-c40e-4317-9aa1-33841b135acd)
+
+
+
+
 
 ## <a name="Database_Tools/Technologies"></a> Database Tools/Technologies
 
