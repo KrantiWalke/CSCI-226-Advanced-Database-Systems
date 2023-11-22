@@ -1,4 +1,3 @@
-create schema imdb226_1;
 use imdb226_1;
 show variables like 'local_infile';
 SET GLOBAL local_infile = 1;
