@@ -10,9 +10,28 @@
 
 
 ## Table of Contents:
-+ [Data_Domain_-_IMDb_(Internet_Movie_Database)](#Data Domain - IMDb (Internet Movie Database)) </br>
-+ [Sources_for_Datasets](#Sources for Datasets) </br>
-+ [Database_Tools/Technologies](#Database Tools/Technologies) </br>
+1.	Introduction	
+1.1 Methodology:	
+1.2 Domain Description	
+2.	Dataset Details	
+2.1 Sources for original dataset	
+2.2 Dataset License Details	
+2.3 IMDb dataset files	
+3.	Database Design	
+4.	Prepare the IMDB Data to build the database.	
+4.1 Feature Pre-processing	
+5.	Database Schema	
+5.1 Build MySQL database	
+5.2 Below are the final created tables in our database:	
+6.	SQL Queries
+7.	Normal Forms	
+8.	Visualizations	
+9.	Analytics/Analysis	
+10.	Links	
+10.1 GitHub Link	
+10.2 All Dataset links.	
+
+
 
 ## <a name="Data_Domain_-_IMDb_(Internet_Movie_Database)"></a> Data Domain - IMDb (Internet Movie Database)
 
