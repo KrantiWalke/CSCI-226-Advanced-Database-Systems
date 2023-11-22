@@ -20,9 +20,7 @@
 
 2.1 Sources for original dataset	
 
-2.2 Dataset License Details	
-
-2.3 IMDb dataset files	
+2.2 IMDb dataset files	
 
 3.	Database Design	
 4.	Prepare the IMDB Data to build the database.	
@@ -95,12 +93,13 @@ IMDb's data is derived from:
 
 
  
-## <a name="Sources_for_Datasets"></a> Sources for Datasets
-
+# 2.	Dataset Details	
+## 2.1 Sources for original dataset
 IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets/
 
 Data Location: https://datasets.imdbws.com/
 
+## 2.2 IMDb dataset files
 IMDb data files :
 - title.akas.tsv.gz:  (8 x 37476209)  Contains alternative titles, regions, languages, and attributes for IMDb titles.
 - title.basics.tsv.gz: (9 x 10234938)  Provides fundamental details about IMDb titles, including type, primary title, and genres.
