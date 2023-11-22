@@ -42,7 +42,7 @@
 
 
 # 1. Introduction
-In this project, we embark on a journey to construct a MySQL database leveraging the Internet Movie Database (IMDb) dataset. Comprising seven compressed tab-separated-value (*.tsv) files, this dataset is regularly updated, though our project utilizes the snapshot from November 29, 2019. The project aims to:
+In this project, we embark on a journey to construct a MySQL database leveraging the Internet Movie Database (IMDb) dataset. Comprising seven compressed tab-separated-value (*.tsv) files, this dataset is regularly updated, though our project utilizes the snapshot from October 14, 2023. The project aims to:
 
 1. Acquire proficiency in MySQL, a prominent database management system.
 2. Understand fundamental database design principles, including Entity-Relationship diagrams, logical schema creation, and the concept of database normalization.
