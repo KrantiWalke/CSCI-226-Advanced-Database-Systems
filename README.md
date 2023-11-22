@@ -175,6 +175,7 @@ https://dev.mysql.com/doc/workbench/en/wb-installing-windows.html
 https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html
 ### 5.1.3	Create IMDb database in MySQL
 a)	Create a schema and set INFILE ACCESS:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/db1417fb-73c3-41b0-9414-0f919f55362e)
 
 b)	Use the schema to create a table in the database: imdb_TableCreation.sql
