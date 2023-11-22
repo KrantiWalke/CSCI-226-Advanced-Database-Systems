@@ -27,6 +27,7 @@
       - 5.1 Build MySQL database	
       - 5.2 Final created tables in our database:
       - 5.3 Table includes required columns, indexes, Foreign Keys, Triggers
+      - 5.4 All the Stored procedures created
 
 6.	SQL Queries
 7.	Normal Forms	
