@@ -25,7 +25,8 @@
 5.	Database Schema	
 
       - 5.1 Build MySQL database	
-      - 5.2 Below are the final created tables in our database:	
+      - 5.2 Final created tables in our database:
+      - 5.3 Table includes required columns, indexes, Foreign Keys, Triggers
 
 6.	SQL Queries
 7.	Normal Forms	
@@ -170,22 +171,29 @@ https://dev.mysql.com/doc/workbench/en/wb-installing-windows.html
 https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html
 ### 5.1.3	Create IMDb database in MySQL
 a)	Create a schema and set INFILE ACCESS:
-
+- Using imdb_TableCreation.sql
+  
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/db1417fb-73c3-41b0-9414-0f919f55362e)
 
-b)	Use the schema to create a table in the database: imdb_TableCreation.sql
-Includes:  – Key Definitions – Referential Integrity Constraints
-Example: Movie dataset
+b)	Use the schema to create a table in the database: 
+- Using imdb_TableCreation.sql
+- Includes:
+      – Key Definitions
+      – Referential Integrity Constraints
+  
+- Example: Movie dataset
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d8c5e9d0-4c2f-49cc-8495-b2687ee2f097)
 
 c)	Create a trigger for each table operation: imdb_TriggereCreation.sql
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ee378623-de6c-4fd1-b8b0-a67d6ec8f250)
 
-d)	Load the dataset in table: imdb_LoadDataset.sql
+d)	Load the dataset in table: 
+- Using imdb_LoadDataset.sql
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/05668bd4-c7cc-4d8b-949b-94e88390a37a)
 
 
-e)	Create Stored Procedures for certain operations like Add New Movie or Get Movie Details: imdb_StoredProceduresCreation.sql
+e)	Create Stored Procedures for certain operations like Add New Movie or Get Movie Details: 
+- Using imdb_StoredProceduresCreation.sql
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/830fbeff-8db4-4e8f-8bf9-1836d82c13c7)
 
 ## 5.2 Below are the final created tables in our database:
@@ -194,7 +202,8 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
 ## 5.3 Each table includes required columns, indexes, Foreign Keys, Triggers:
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/27ff5980-ef20-4e26-a04a-7a723ad1e4c6)
 
-## 5.4 All the Stored procedures created using imdb_StoredProceduresCreation.sql
+## 5.4 All the Stored procedures created
+- Using imdb_StoredProceduresCreation.sql
   
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b31f0570-0dae-432c-9a5c-f5a6dfb47a91) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/25cbe354-c40e-4317-9aa1-33841b135acd)
 
