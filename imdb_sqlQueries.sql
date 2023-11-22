@@ -82,8 +82,6 @@ from movie m1, actor a1, movie_actor_relation ma
 where m1.movieID = ma.movieID
 and a1.actorID = ma.actorID) LIMIT 10;
 
-/*---------------------------SIMPLE QUERIES------------------------------------------*/
-
 -- 20.List all movies with their average ratings and number of votes:
 SELECT primaryTitle, averageRating, numVotes FROM movie;
 
