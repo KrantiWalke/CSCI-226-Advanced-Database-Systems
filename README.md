@@ -62,13 +62,15 @@ In this project, we embark on a journey to construct a MySQL database leveraging
 - Establishing the MySQL database.
 - Populating the database with the dataset.
 - Implementing SQL schema including:
+- 
       - Tables creation           
       - Key Definitions per tables
       - Referential Integrity Constraints per table
       - Triggers for each table
       - Stored Procedures for each table
       - Loading the dataset into tables
-- Include the Functional Dependencies and any Multi-Valued Dependencies for your database and state whether they are free from violations for: 	
+- Include the Functional Dependencies and any Multi-Valued Dependencies for your database and state whether they are free from violations for:
+- 
       - 3rd Normal form 
       - Boyce-Codd Normal Form 
       - 4th Normal Form.
