@@ -12,20 +12,20 @@
 ## Table of Contents:
 1.	Introduction	
 
-1.1 Methodology
+- 1.1 Methodology
 
-1.2 Domain Description	
+- 1.2 Domain Description	
 
 2.	Dataset Details	
 
-2.1 Sources for original dataset	
+- 2.1 Sources for original dataset	
 
-2.2 IMDb dataset files	
+- 2.2 IMDb dataset files	
 
 3.	Database Design	
 4.	Prepare the IMDB Data to build the database.	
 
-4.1 Feature Pre-processing	
+- 4.1 Feature Pre-processing	
 
 5.	Database Schema	
 
@@ -37,9 +37,7 @@
 7.	Normal Forms	
 8.	Visualizations	
 9.	Analytics/Analysis	
-10.	Links	
-10.1 GitHub Link	
-10.2 All Dataset links.	
+10.	All Dataset links.	
 
 
 
