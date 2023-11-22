@@ -55,26 +55,26 @@ In this project, we embark on a journey to construct a MySQL database leveraging
 
 ## 1.1 Methodology:
 
-•	Analyzing the IMDb dataset to grasp its structure and content.
-•	Designing a relational database to effectively store the IMDb data.
-•	Developing an Entity-Relationship (ER) diagram to model our database.
-•	Applying feature engineering techniques and restructuring the IMDb data using Python.
-•	Establishing the MySQL database.
-•	Populating the database with the dataset.
-•	Implementing SQL schema including:
-      o	Tables creation           
-      o	Key Definitions per tables
-      o	Referential Integrity Constraints per table
-      o	Triggers for each table
-      o	Stored Procedures for each table
-      o	Loading the dataset into tables
-•	Include the Functional Dependencies and any Multi-Valued Dependencies for your database and state whether they are free from violations for: 	
-      o	3rd Normal form 
-      o	Boyce-Codd Normal Form 
-      o	4th Normal Form.
-•	Engaging in various SQL queries, from basic to complex, to interrogate the IMDb data.
-•	Conducting in-depth data exploration and visualization using Python.
-•	Interesting insights within data using supporting queries.
+- Analyzing the IMDb dataset to grasp its structure and content.
+- Designing a relational database to effectively store the IMDb data.
+- Developing an Entity-Relationship (ER) diagram to model our database.
+- Applying feature engineering techniques and restructuring the IMDb data using Python.
+- Establishing the MySQL database.
+- Populating the database with the dataset.
+- Implementing SQL schema including:
+      - Tables creation           
+      - Key Definitions per tables
+      - Referential Integrity Constraints per table
+      - Triggers for each table
+      - Stored Procedures for each table
+      - Loading the dataset into tables
+- Include the Functional Dependencies and any Multi-Valued Dependencies for your database and state whether they are free from violations for: 	
+      - 3rd Normal form 
+      - Boyce-Codd Normal Form 
+      - 4th Normal Form.
+- Engaging in various SQL queries, from basic to complex, to interrogate the IMDb data.
+- Conducting in-depth data exploration and visualization using Python.
+- Interesting insights within data using supporting queries.
 
 Throughout this project, we adhere to established SQL style conventions as outlined in the SQL Style Guide, favoring underscores in attribute names over camel case, aligning with the naming conventions in the IMDb data files.
 
@@ -82,13 +82,13 @@ Throughout this project, we adhere to established SQL style conventions as outli
 
 The domain for the IMDb Non-Commercial Datasets is the entertainment industry, specifically the world of movies and television. IMDb (Internet Movie Database) is a widely recognized online database of films, television series, and the people involved in creating and starring in them. It serves as a comprehensive resource for information about movies, TV shows, cast and crew, user ratings, and more.
 
-●	Serves as an online repository that compiles information pertaining to the entertainment industry.
-●	We can find information about movies, TV shows, actors, user ratings, and other aspects of the film and television industry.
-●	The IMDb Non-Commercial Datasets offer a well-organized collection of data that are available for public use without commercial purposes.
-●	Have a wide range of details about movies and TV shows, making it a one-stop hub for all things related to the big and small screen.
+- Serves as an online repository that compiles information pertaining to the entertainment industry.
+- We can find information about movies, TV shows, actors, user ratings, and other aspects of the film and television industry.
+- The IMDb Non-Commercial Datasets offer a well-organized collection of data that are available for public use without commercial purposes.
+- Have a wide range of details about movies and TV shows, making it a one-stop hub for all things related to the big and small screen.
 
 IMDb's data is derived from:
-•	movie studios, production companies, user contributions, official press releases, and publicly available information.
+-movie studios, production companies, user contributions, official press releases, and publicly available information.
 
 
 
