@@ -12,26 +12,20 @@
 ## Table of Contents:
 1.	Introduction	
 
-- 1.1 Methodology
-
-- 1.2 Domain Description	
+      - 1.1 Methodology
+      - 1.2 Domain Description	
 
 2.	Dataset Details	
 
-- 2.1 Sources for original dataset	
-
-- 2.2 IMDb dataset files	
+      - 2.1 Sources for original dataset	
+      - 2.2 IMDb dataset files	
 
 3.	Database Design	
-4.	Prepare the IMDB Data to build the database.	
-
-- 4.1 Feature Pre-processing	
-
+4.	Prepare the IMDB Data to build the database.
 5.	Database Schema	
 
-- 5.1 Build MySQL database	
-
-- 5.2 Below are the final created tables in our database:	
+      - 5.1 Build MySQL database	
+      - 5.2 Below are the final created tables in our database:	
 
 6.	SQL Queries
 7.	Normal Forms	
@@ -161,7 +155,8 @@ Attributes  :
 
 # 3.	Database Design 
 # 4.	Prepare the IMDB Data to build the database.
-## 4.1 Feature Pre-processing
+Feature Pre-processing
+
 The Feature Pre-processing of IMDB data is done using python. The IMDB_Feature_Pre-processing.py reads in the 7 data files and does the feature preprocessing of the IMDb data. After which, the desired set of tables are output as tab-separate-value (tsv) files.
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/097dcb10-b3cd-47e4-97cb-9e16b2a8f613)
 
