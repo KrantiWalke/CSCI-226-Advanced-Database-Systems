@@ -210,54 +210,71 @@ After creating and loading data into the database, we can now pose queries to it
 
 Some Good queries from imdb_sqlQueries.sql :
 [1]	How many movies are made in each genre each year?
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/e8cae552-e270-496c-81d1-526f577a12df)
 
 [2]	What genres are there? How many movies are there in each genre?
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/a563cf26-567f-441b-a7db-e92cb2571d0f)
 
 [3]	What is a typical runtime for movies in each genre?
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ce214eaf-9eb3-4e0b-8366-ba15c9260ac1)
 
 [4]	No. of movies directed by the director and in which genre alphabetically by name and highest count as per genre?
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d6546bab-03e3-42ef-8915-b7d816191b1f)
 
 [5]	Top 10 movies on basis of region
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ec1d34c8-1678-4b44-8313-f6a545bda35a)
 
 [6]	First 50 entries WriterName according to their series and their genres.
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/182e8deb-19fb-468b-b1ce-484e48c64c55)
  
 [7]	Count of movies in each genre, according to the highest first HAVING movies greater than 20000.
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/2fa02319-fe55-469c-832e-197c99434cb7)
 
 [8]	Series with More Episodes Than the Average Number of Episodes Per Series:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3a372064-d65c-4930-810c-12f6e05c82ac)
 
 [9]	Writers with More than Average Number of Votes for Their Movies:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/59b541ae-56c8-41d5-965c-a1950fe913b0)
 
 [10]	Directors Who Have Worked in Both Movies and Series:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3537f742-7f71-4f27-9aa4-cc47134498c5)
 
 [11]	Movies with Most Diverse Genres:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8f627ace-ffed-4c56-b802-94201f8e1827)
 
 [12]	Writers Who Have Worked in Both Highest and Lowest Rated Movies:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/c33945bf-a4c1-440d-a208-925c542d9866)
 
 [13]	Find the average runtime of movies for each genre:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/2c0e177d-3d54-48a3-9d2a-906c2e8ca6c3)
 
 [14]	Find directors who have directed more than 5 movies:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b9cbebe0-ca5a-43d9-bab4-a0b56d5733b6)
 
 [15]	Find actors who have acted in both movies and series:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/c9a50b14-6bc2-4719-a4b2-fd48ca0f0e82)
 
 [16]	Determine the average number of votes for movies by release year:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/5a34ef67-699b-447c-b16a-f7b9f38804cf)
 
 [17]	List series with a higher average rating than the average rating of all series:
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ae59dac5-2274-4d36-9652-dc6164bfc5bf)
 
  
@@ -275,40 +292,53 @@ In the notebook Visualizations.ipynb we used the query results from the IMDb dat
 This notebook is by no means a thorough exploration of the IMDb dataset. Its purpose is to visualize the retrieved data with the pandas package. 
 
 1)	No. of movies directed by the director and in which genre alphabetically by name and highest count as per genre?
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d8adf07f-1668-4561-96d3-7c0b484bb8d4)
 
 2)	Top 10 movies on basis of region
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b4c886c3-ea7a-42a1-a091-f9a5b677c7f7)
 
 3)	First 50 entries WriterName according to their series and their genres.
+
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8da336e2-75bf-44e3-9305-4a45e5c74e50) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/afcdd670-e175-4ca0-84a5-e29b8c952e6c)
 
 4)	Count of movies in each genre, according to the highest first HAVING movies greater than 20000.
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/1c695425-be2c-4904-bed3-4a052cd75372) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9147397e-80c7-46b3-a862-20f51168f5d3)
 
 5)	Count the occurrences of each genre per writer
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8354c071-a031-4c4a-a385-ece72c3ea875)
 
 6)	Find the total number of movies released each year:
+
 - a.	Total Movies Released by Decade
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/78663330-93c5-4ad1-ac83-9649773ca0cc)
 
 - b.	Trend of Movie Releases Over Decades
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/2bd2baa2-df12-4eb6-a54e-a6d7e7561176)
 
 7)	List series along with their genres
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/05619d11-104b-4919-ad64-096a65cc3280) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/196331d2-5ee1-421f-9ccc-9dcece004d97)
 
 8)	 Genre Distribution (series along with their genres)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/bbe3506a-87d3-4f27-ab08-622ed6143027)
 
 9)	 What is a typical runtime for movies in each genre?
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/4d0c6586-6aba-4d7a-93b7-48e4456404d2)
 
 10)	What genres are there? How many movies are there in each genre?
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/915944ef-0739-407f-8047-d97f675e9564)
 
 11)	How many movies are made in each genre each year?
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/a75b3056-936b-4d42-90be-d073e3a171b5)
 
 
