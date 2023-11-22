@@ -1,7 +1,7 @@
 # CSCI-226-Advanced-Database-Systems
 ## Final Project (Fall 2023)
 
-## Teammates:
+## Contributors:
 - Kranti Walke
 - Raksha Jagadish 
 - Vaideki Muralitharan
