@@ -10,7 +10,7 @@
 
 
 ## Table of Contents:
-- [1. Introduction](#1.Introduction)	
++ [1. Introduction](#1_._Introduction) </br>
 
       - 1.1 Methodology
       - 1.2 Domain Description	
@@ -35,7 +35,7 @@
 9.	Analytics/Analysis	
 10.	All Dataset links.	
 
-
+## <a name="1_._Introduction"></a> 1. Introduction
 
 ## 1. Introduction
 In this project, we embark on a journey to construct a MySQL database leveraging the Internet Movie Database (IMDb) dataset. Comprising seven compressed tab-separated-value (*.tsv) files, this dataset is regularly updated, though our project utilizes the snapshot from October 14, 2023. The project aims to:
