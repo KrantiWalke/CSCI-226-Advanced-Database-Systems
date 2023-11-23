@@ -10,10 +10,9 @@
 
 
 ## Table of Contents:
-+ [1. Introduction](#1_._Introduction) </br>
-
-      - 1.1 Methodology
-      - 1.2 Domain Description	
++ [1. Introduction](#1_Introduction) </br>
++ [1.1 Methodology](#1_._1_Methodology) </br>
++ [1.2 Domain Description](#1_._2_Domain_Description) </br>	
 
 2.	Dataset Details	
 
@@ -35,9 +34,7 @@
 9.	Analytics/Analysis	
 10.	All Dataset links.	
 
-## <a name="1_._Introduction"></a> 1. Introduction
-
-## 1. Introduction
+## <a name="1_Introduction"></a> 1 Introduction
 In this project, we embark on a journey to construct a MySQL database leveraging the Internet Movie Database (IMDb) dataset. Comprising seven compressed tab-separated-value (*.tsv) files, this dataset is regularly updated, though our project utilizes the snapshot from October 14, 2023. The project aims to:
 
 1. Acquire proficiency in MySQL, a prominent database management system.
@@ -45,8 +42,7 @@ In this project, we embark on a journey to construct a MySQL database leveraging
 3. Develop skills in database querying, both through direct MySQL use and indirectly via Python.
 4. Employ Python for the visualization of IMDb data.
 
-## 1.1 Methodology:
-
+## <a name="1_._1_Methodology"></a> 1.1 Methodology
 - Analyzing the IMDb dataset to grasp its structure and content.
 - Designing a relational database to effectively store the IMDb data.
 - Developing an Entity-Relationship (ER) diagram to model our database.
@@ -72,8 +68,8 @@ In this project, we embark on a journey to construct a MySQL database leveraging
 
 Throughout this project, we adhere to established SQL style conventions as outlined in the SQL Style Guide, favoring underscores in attribute names over camel case, aligning with the naming conventions in the IMDb data files.
 
-## 1.2 Domain Description
 
+## <a name="1_._2_Domain_Description"></a> 1.2 Domain Description
 The domain for the IMDb Non-Commercial Datasets is the entertainment industry, specifically the world of movies and television. IMDb (Internet Movie Database) is a widely recognized online database of films, television series, and the people involved in creating and starring in them. It serves as a comprehensive resource for information about movies, TV shows, cast and crew, user ratings, and more.
 
 - Serves as an online repository that compiles information pertaining to the entertainment industry.
