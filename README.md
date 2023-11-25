@@ -13,10 +13,8 @@
 + [1. Introduction](#1_Introduction) </br>
 + [1.1 Methodology](#1_._1_Methodology) </br>
 + [1.2 Domain Description](#1_._2_Domain_Description) </br>	
-
-2.	Dataset Details	
-
-      - 2.1 Sources for original dataset	
++ [2.Dataset Details](#2_._Dataset_Details) </br>
++ + [2.1 Sources for original dataset](#2_._1_Sources_for_original_dataset)	
       - 2.2 IMDb dataset files	
 
 3.	Database Design	
