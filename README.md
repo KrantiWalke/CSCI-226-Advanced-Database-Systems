@@ -165,6 +165,9 @@ Attributes  :
 The provided IMDb data is currently unnormalized. To address this, we have developed an entity-relationship diagram for our IMDb relational database, which is depicted in the following illustration.
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8c33143-cd84-4afd-9c98-30d58adc88ad)
 
+
+
+
 # 4.	Prepare the IMDB Data to build the database.
 Feature Pre-processing
 
