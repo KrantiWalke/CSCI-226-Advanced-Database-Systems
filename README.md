@@ -46,6 +46,7 @@
 
 
 ## <a name="1_Introduction"></a> 1 Introduction
+
 In this project, we embark on a journey to construct a MySQL database leveraging the Internet Movie Database (IMDb) dataset. Comprising seven compressed tab-separated-value (*.tsv) files, this dataset is regularly updated, though our project utilizes the snapshot from October 14, 2023. The project aims to:
 
 1. Acquire proficiency in MySQL, a prominent database management system.
@@ -54,6 +55,7 @@ In this project, we embark on a journey to construct a MySQL database leveraging
 4. Employ Python for the visualization of IMDb data.
 
 ## <a name="1_._1_Methodology"></a> 1.1 Methodology
+
 - Analyzing the IMDb dataset to grasp its structure and content.
 - Designing a relational database to effectively store the IMDb data.
 - Developing an Entity-Relationship (ER) diagram to model our database.
@@ -68,8 +70,7 @@ In this project, we embark on a journey to construct a MySQL database leveraging
       - Triggers for each table
       - Stored Procedures for each table
       - Loading the dataset into tables
-- Include the Functional Dependencies and any Multi-Valued Dependencies for your database and state whether they are free from violations for:
-- 
+- Includes the Functional Dependencies and any Multi-Valued Dependencies for your database and state whether they are free from violations for:
       - 3rd Normal form 
       - Boyce-Codd Normal Form 
       - 4th Normal Form.
@@ -81,6 +82,7 @@ Throughout this project, we adhere to established SQL style conventions as outli
 
 
 ## <a name="1_._2_Domain_Description"></a> 1.2 Domain Description
+
 The domain for the IMDb Non-Commercial Datasets is the entertainment industry, specifically the world of movies and television. IMDb (Internet Movie Database) is a widely recognized online database of films, television series, and the people involved in creating and starring in them. It serves as a comprehensive resource for information about movies, TV shows, cast and crew, user ratings, and more.
 
 - Serves as an online repository that compiles information pertaining to the entertainment industry.
@@ -89,15 +91,19 @@ The domain for the IMDb Non-Commercial Datasets is the entertainment industry, s
 - Have a wide range of details about movies and TV shows, making it a one-stop hub for all things related to the big and small screen.
 
 IMDb's data is derived from:
+
 -movie studios, production companies, user contributions, official press releases, and publicly available information.
 
 ## <a name="2_._Dataset_Details"></a> 2 Dataset Details	
+
 ## <a name="2_._1_Sources_for_original_dataset"></a> 2.1 Sources for Original Dataset
+
 IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets/
 
 Data Location: https://datasets.imdbws.com/
 
 ## <a name="2_._2_IMDb_Dataset_Files"></a> 2.2 IMDb Dataset Files
+
 IMDb data files :
 - title.akas.tsv.gz:  (8 x 37476209)  Contains alternative titles, regions, languages, and attributes for IMDb titles.
 - title.basics.tsv.gz: (9 x 10234938)  Provides fundamental details about IMDb titles, including type, primary title, and genres.
@@ -163,17 +169,22 @@ Attributes  :
 - knownForTitles (array of tconsts) – titles for a person
 
 ## <a name="3_Database_Design"></a> 3 Database Design
+
 ## <a name="3_._1_Entity_Relationship_ER_Diagram"></a> 3.1 Entity-Relationship (ER) Diagram
+
 The provided IMDb data is currently unnormalized. To address this, we have developed an entity-relationship diagram for our IMDb relational database, which is depicted in the following illustration.
+
 ![ER](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/75faba76-b451-4c53-a401-6f3623927ccd)
 
 
 
 
 ## <a name="4_Prepare_the_IMDb_Data_to_Build_the_Database"></a> 4 Prepare the IMDb Data to Build the Database
-Feature Pre-processing
+
+Feature Pre-processing:
 
 The Feature Pre-processing of IMDB data is done using python. The IMDB_Feature_Pre-processing.py reads in the 7 data files and does the feature preprocessing of the IMDb data. After which, the desired set of tables are output as tab-separate-value (tsv) files.
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8748ec03-8c50-4877-baf8-99e0c7257725)
 
 We have added all the comments in the IMDB_Feature_Pre-processing.py required to understand how we have done the feature preprocessing.
@@ -188,44 +199,57 @@ https://dev.mysql.com/doc/workbench/en/wb-installing-windows.html
 https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html
 ### 5.1.3	Create IMDb database in MySQL
 a)	Create a schema and set INFILE ACCESS:
+
 - Using imdb_TableCreation.sql
   
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/db1417fb-73c3-41b0-9414-0f919f55362e)
 
 b)	Use the schema to create a table in the database: 
+
 - Using imdb_TableCreation.sql
 - Includes:
       – Key Definitions
       – Referential Integrity Constraints
   
 - Example: Movie dataset
+  
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d8c5e9d0-4c2f-49cc-8495-b2687ee2f097)
 
 c)	Create a trigger for each table operation: imdb_TriggereCreation.sql
+
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ee378623-de6c-4fd1-b8b0-a67d6ec8f250)
 
 d)	Load the dataset in table: 
+
 - Using imdb_LoadDataset.sql
+  
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/05668bd4-c7cc-4d8b-949b-94e88390a37a)
 
 
 e)	Create Stored Procedures for certain operations like Add New Movie or Get Movie Details: 
+
 - Using imdb_StoredProceduresCreation.sql
+  
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/830fbeff-8db4-4e8f-8bf9-1836d82c13c7)
 
 ## <a name="5_._2_Final_Created_Tables_in_Our_Database"></a> 5.2 Final Created Tables in Our Database
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9caabb10-b974-4075-a64f-ba7bae146244)
 
 ## <a name="5_._3_Table_Includes_Required_Columns_Indexes_Foreign_Keys_Triggers_Views"></a> 5.3 Table Includes Required Columns, Indexes, Foreign Keys, Triggers, Views
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/dff7d747-226a-4d8a-b325-eddd39258ecb)
 
 ## <a name="5_._4_All_the_Stored_Procedures_Created"></a> 5.4 All the Stored Procedures Created
+
 - Using imdb_StoredProceduresCreation.sql
   
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b31f0570-0dae-432c-9a5c-f5a6dfb47a91) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/25cbe354-c40e-4317-9aa1-33841b135acd)
 
 ## <a name="5_._5_All_the_Views_Created"></a> 5.5 All the Views Created
+
 All the views for SQL queries created using imdb_ViewsCreation.sql
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/531553c5-cc3c-45b9-a9e6-30831a35b3df)
 
 ## <a name="6_Logical_Schema"></a> 6 Logical Schema
@@ -233,6 +257,7 @@ All the views for SQL queries created using imdb_ViewsCreation.sql
 After creating a new schema and loading all the new datasets we have obtain the logical schema illustrated below
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9847d097-cbfc-4390-b31b-e09e4c184e66)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/5816fc25-72f7-40c8-84b1-5b8132767d25)
 
 ## <a name="7_SQL_Queries"></a> 7 SQL Queries
@@ -240,6 +265,7 @@ After creating a new schema and loading all the new datasets we have obtain the 
 After creating and loading data into the database, we can now pose queries to it. In the file imdb_sqlQueries.sql we consider more than 40 questions and answer them by querying the IMDb database. 
 
 Some Good queries from imdb_sqlQueries.sql :
+
 [1]	How many movies are made in each genre each year?
 
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/e8cae552-e270-496c-81d1-526f577a12df)
@@ -312,6 +338,7 @@ Some Good queries from imdb_sqlQueries.sql :
 ## <a name="8_Normal_Forms"></a> 8 Normal Forms
 
 ## <a name="9_Visualizations"></a> 9 Visualizations
+
 We have saved some of the queries in CSV files in a folder named QueryResultedCSV
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/46b40ab6-b06a-49e5-8864-43a8223a67ca)
@@ -332,7 +359,7 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
 3)	First 50 entries WriterName according to their series and their genres.
 
-   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8da336e2-75bf-44e3-9305-4a45e5c74e50) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/afcdd670-e175-4ca0-84a5-e29b8c952e6c)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8da336e2-75bf-44e3-9305-4a45e5c74e50) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/afcdd670-e175-4ca0-84a5-e29b8c952e6c)
 
 4)	Count of movies in each genre, according to the highest first HAVING movies greater than 20000.
 
@@ -386,6 +413,12 @@ https://drive.google.com/drive/folders/1enQdPtuilduCgRHh5nHBHcLGXgpNPEPL?usp=sha
 
 ## <a name="12_Tools_Used"></a> 12 Tools Used
 
+- For Datasets extraction: Python (Jupyter Notebook)
+- For ER Diagram: 
+- For Feature Preprocessing: Python (Jupyter Notebook)
+- For SQL Schema and Queries: SQL (MySQL Workbench)
+- For Logical Schema: MySQL Workbench
+- For Visualization and analysis: Python (Jupyter Notebook) Python (Jupyter Notebook)
 
 
 
