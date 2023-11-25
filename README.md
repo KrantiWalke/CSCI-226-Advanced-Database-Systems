@@ -11,17 +11,14 @@
 
 ## Table of Contents:
 1. [Introduction](#1_Introduction) </br>
-1.1 [Methodology](#1_._1_Methodology) </br>
-1.2 [Domain Description](#1_._2_Domain_Description) </br>	
+   - 1.1 [Methodology](#1_._1_Methodology) </br>
+   - 1.2 [Domain Description](#1_._2_Domain_Description) </br>	
 2.[Dataset Details](#2_._Dataset_Details) </br>
-2.1 [Sources for original dataset](#2_._1_Sources_for_original_dataset)	
-2.2 [IMDb Dataset Files](#2_._2_IMDb_Dataset_Files)
-
+   - 2.1 [Sources for original dataset](#2_._1_Sources_for_original_dataset)	
+   - 2.2 [IMDb Dataset Files](#2_._2_IMDb_Dataset_Files)
 3. [Database Design](#3_Database_Design)
    - 3.1 [Entity-Relationship (ER) Diagram](#3_._1_Entity_Relationship_ER_Diagram)
-
 4. [Prepare the IMDb Data to Build the Database](#4_Prepare_the_IMDb_Data_to_Build_the_Database)
-
 5. [Database Schema](#5_Database_Schema)
    - [5.1 Build MySQL Database](#5_._1_Build_MySQL_Database)
    - [5.2 Final Created Tables in Our Database](#5_._2_Final_Created_Tables_in_Our_Database)
