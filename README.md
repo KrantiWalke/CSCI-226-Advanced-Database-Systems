@@ -14,7 +14,7 @@
    - 1.1 [Methodology](#1_._1_Methodology) </br>
    - 1.2 [Domain Description](#1_._2_Domain_Description) </br>
      
-2.[Dataset Details](#2_._Dataset_Details) </br>
+2. [Dataset Details](#2_._Dataset_Details) </br>
    - 2.1 [Sources for original dataset](#2_._1_Sources_for_original_dataset)	
    - 2.2 [IMDb Dataset Files](#2_._2_IMDb_Dataset_Files)
      
@@ -41,6 +41,8 @@
 11. [Analytics/Analysis](#10_Analytics_Analysis)
 
 12. [All Dataset Links](#11_All_Dataset_Links)
+
+13.  [Tools Used](#12_Tools_Used)
 
 
 ## <a name="1_Introduction"></a> 1 Introduction
@@ -161,23 +163,23 @@ Attributes  :
 - knownForTitles (array of tconsts) – titles for a person
 
 ## <a name="3_Database_Design"></a> 3 Database Design
-### <a name="3_._1_Entity_Relationship_ER_Diagram"></a> 3.1 Entity-Relationship (ER) Diagram
+## <a name="3_._1_Entity_Relationship_ER_Diagram"></a> 3.1 Entity-Relationship (ER) Diagram
 The provided IMDb data is currently unnormalized. To address this, we have developed an entity-relationship diagram for our IMDb relational database, which is depicted in the following illustration.
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8c33143-cd84-4afd-9c98-30d58adc88ad)
-
-
-
-
-# 4.	Prepare the IMDB Data to build the database.
-Feature Pre-processing
-
-The Feature Pre-processing of IMDB data is done using python. The IMDB_Feature_Pre-processing.py reads in the 7 data files and does the feature preprocessing of the IMDb data. After which, the desired set of tables are output as tab-separate-value (tsv) files.
 ![ER](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/75faba76-b451-4c53-a401-6f3623927ccd)
 
 
 
-# 5.	Database Schema
-### 5.1 Build MySQL database
+
+## <a name="4_Prepare_the_IMDb_Data_to_Build_the_Database"></a> 4 Prepare the IMDb Data to Build the Database
+Feature Pre-processing
+
+The Feature Pre-processing of IMDB data is done using python. The IMDB_Feature_Pre-processing.py reads in the 7 data files and does the feature preprocessing of the IMDb data. After which, the desired set of tables are output as tab-separate-value (tsv) files.
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8748ec03-8c50-4877-baf8-99e0c7257725)
+
+We have added all the comments in the IMDB_Feature_Pre-processing.py required to understand how we have done the feature preprocessing.
+
+## <a name="5_Database_Schema"></a> 5 Database Schema
+## <a name="5_._1_Build_MySQL_Database"></a> 5.1 Build MySQL Database
 To build the IMDB MySQL database we followed the below steps:
 
 ### 5.1.1	Install MySQL workbench: 
@@ -211,29 +213,29 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
 - Using imdb_StoredProceduresCreation.sql
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/830fbeff-8db4-4e8f-8bf9-1836d82c13c7)
 
-## 5.2 Below are the final created tables in our database:
+## <a name="5_._2_Final_Created_Tables_in_Our_Database"></a> 5.2 Final Created Tables in Our Database
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9caabb10-b974-4075-a64f-ba7bae146244)
 
-## 5.3 Each table includes required columns, indexes, Foreign Keys, Triggers, Views:
+## <a name="5_._3_Table_Includes_Required_Columns_Indexes_Foreign_Keys_Triggers_Views"></a> 5.3 Table Includes Required Columns, Indexes, Foreign Keys, Triggers, Views
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/dff7d747-226a-4d8a-b325-eddd39258ecb)
 
-## 5.4 All the Stored procedures created
+## <a name="5_._4_All_the_Stored_Procedures_Created"></a> 5.4 All the Stored Procedures Created
 - Using imdb_StoredProceduresCreation.sql
   
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b31f0570-0dae-432c-9a5c-f5a6dfb47a91) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/25cbe354-c40e-4317-9aa1-33841b135acd)
 
-## 5.5 All the views 
+## <a name="5_._5_All_the_Views_Created"></a> 5.5 All the Views Created
 All the views for SQL queries created using imdb_ViewsCreation.sql
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/531553c5-cc3c-45b9-a9e6-30831a35b3df)
 
-# 6.	Logical schema
+## <a name="6_Logical_Schema"></a> 6 Logical Schema
 
 After creating a new schema and loading all the new datasets we have obtain the logical schema illustrated below
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9847d097-cbfc-4390-b31b-e09e4c184e66)
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/5816fc25-72f7-40c8-84b1-5b8132767d25)
 
-# 7. SQL Queries:
+## <a name="7_SQL_Queries"></a> 7 SQL Queries
 
 After creating and loading data into the database, we can now pose queries to it. In the file imdb_sqlQueries.sql we consider more than 40 questions and answer them by querying the IMDb database. 
 
@@ -307,9 +309,9 @@ Some Good queries from imdb_sqlQueries.sql :
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ae59dac5-2274-4d36-9652-dc6164bfc5bf)
 
  
-# 7.	Normal Forms
+## <a name="8_Normal_Forms"></a> 8 Normal Forms
 
-# 8.	Visualizations
+## <a name="9_Visualizations"></a> 9 Visualizations
 We have saved some of the queries in CSV files in a folder named QueryResultedCSV
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/46b40ab6-b06a-49e5-8864-43a8223a67ca)
@@ -373,13 +375,16 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
 
 
-# 9.	Analytics/Analysis
+## <a name="10_Analytics_Analysis"></a> 10 Analytics/Analysis
 
 
-# 10.	 All Dataset links.
+## <a name="11_All_Dataset_Links"></a> 11 All Dataset Links
 
 https://drive.google.com/drive/folders/1enQdPtuilduCgRHh5nHBHcLGXgpNPEPL?usp=sharing
 
+
+
+## <a name="12_Tools_Used"></a> 12 Tools Used
 
 
 
