@@ -15,22 +15,32 @@
 + [1.2 Domain Description](#1_._2_Domain_Description) </br>	
 + [2.Dataset Details](#2_._Dataset_Details) </br>
 + + [2.1 Sources for original dataset](#2_._1_Sources_for_original_dataset)	
-      - 2.2 IMDb dataset files	
+- [2.2 IMDb Dataset Files](#2_._2_IMDb_Dataset_Files)
 
-3.	Database Design	
-4.	Prepare the IMDB Data to build the database.
-5.	Database Schema	
+3. [Database Design](#3_Database_Design)
+   - [3.1 Entity-Relationship (ER) Diagram](#3_._1_Entity_Relationship_ER_Diagram)
 
-      - 5.1 Build MySQL database	
-      - 5.2 Final created tables in our database:
-      - 5.3 Table includes required columns, indexes, Foreign Keys, Triggers
-      - 5.4 All the Stored procedures created
+4. [Prepare the IMDb Data to Build the Database](#4_Prepare_the_IMDb_Data_to_Build_the_Database)
 
-6.	SQL Queries
-7.	Normal Forms	
-8.	Visualizations	
-9.	Analytics/Analysis	
-10.	All Dataset links.	
+5. [Database Schema](#5_Database_Schema)
+   - [5.1 Build MySQL Database](#5_._1_Build_MySQL_Database)
+   - [5.2 Final Created Tables in Our Database](#5_._2_Final_Created_Tables_in_Our_Database)
+   - [5.3 Table Includes Required Columns, Indexes, Foreign Keys, Triggers, Views](#5_._3_Table_Includes_Required_Columns_Indexes_Foreign_Keys_Triggers_Views)
+   - [5.4 All the Stored Procedures Created](#5_._4_All_the_Stored_Procedures_Created)
+   - [5.5 All the Views Created](#5_._5_All_the_Views_Created)
+
+6. [Logical Schema](#6_Logical_Schema)
+
+7. [SQL Queries](#7_SQL_Queries)
+
+8. [Normal Forms](#8_Normal_Forms)
+
+9. [Visualizations](#9_Visualizations)
+
+10. [Analytics/Analysis](#10_Analytics_Analysis)
+
+11. [All Dataset Links](#11_All_Dataset_Links)
+
 
 ## <a name="1_Introduction"></a> 1 Introduction
 In this project, we embark on a journey to construct a MySQL database leveraging the Internet Movie Database (IMDb) dataset. Comprising seven compressed tab-separated-value (*.tsv) files, this dataset is regularly updated, though our project utilizes the snapshot from October 14, 2023. The project aims to:
