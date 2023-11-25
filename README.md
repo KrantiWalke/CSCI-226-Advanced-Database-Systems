@@ -12,31 +12,35 @@
 ## Table of Contents:
 1. [Introduction](#1_Introduction) </br>
    - 1.1 [Methodology](#1_._1_Methodology) </br>
-   - 1.2 [Domain Description](#1_._2_Domain_Description) </br>	
+   - 1.2 [Domain Description](#1_._2_Domain_Description) </br>
+     
 2.[Dataset Details](#2_._Dataset_Details) </br>
    - 2.1 [Sources for original dataset](#2_._1_Sources_for_original_dataset)	
    - 2.2 [IMDb Dataset Files](#2_._2_IMDb_Dataset_Files)
+     
 3. [Database Design](#3_Database_Design)
    - 3.1 [Entity-Relationship (ER) Diagram](#3_._1_Entity_Relationship_ER_Diagram)
+     
 4. [Prepare the IMDb Data to Build the Database](#4_Prepare_the_IMDb_Data_to_Build_the_Database)
-5. [Database Schema](#5_Database_Schema)
+   
+6. [Database Schema](#5_Database_Schema)
    - [5.1 Build MySQL Database](#5_._1_Build_MySQL_Database)
    - [5.2 Final Created Tables in Our Database](#5_._2_Final_Created_Tables_in_Our_Database)
    - [5.3 Table Includes Required Columns, Indexes, Foreign Keys, Triggers, Views](#5_._3_Table_Includes_Required_Columns_Indexes_Foreign_Keys_Triggers_Views)
    - [5.4 All the Stored Procedures Created](#5_._4_All_the_Stored_Procedures_Created)
    - [5.5 All the Views Created](#5_._5_All_the_Views_Created)
 
-6. [Logical Schema](#6_Logical_Schema)
+7. [Logical Schema](#6_Logical_Schema)
 
-7. [SQL Queries](#7_SQL_Queries)
+8. [SQL Queries](#7_SQL_Queries)
 
-8. [Normal Forms](#8_Normal_Forms)
+9. [Normal Forms](#8_Normal_Forms)
 
-9. [Visualizations](#9_Visualizations)
+10. [Visualizations](#9_Visualizations)
 
-10. [Analytics/Analysis](#10_Analytics_Analysis)
+11. [Analytics/Analysis](#10_Analytics_Analysis)
 
-11. [All Dataset Links](#11_All_Dataset_Links)
+12. [All Dataset Links](#11_All_Dataset_Links)
 
 
 ## <a name="1_Introduction"></a> 1 Introduction
@@ -85,13 +89,13 @@ The domain for the IMDb Non-Commercial Datasets is the entertainment industry, s
 IMDb's data is derived from:
 -movie studios, production companies, user contributions, official press releases, and publicly available information.
 
-# 2.	Dataset Details	
-## 2.1 Sources for original dataset
+## <a name="2_._Dataset_Details"></a> 2 Dataset Details	
+## <a name="2_._1_Sources_for_original_dataset"></a> 2.1 Sources for Original Dataset
 IMDb Non-Commercial Datasets: https://developer.imdb.com/non-commercial-datasets/
 
 Data Location: https://datasets.imdbws.com/
 
-## 2.2 IMDb dataset files
+## <a name="2_._2_IMDb_Dataset_Files"></a> 2.2 IMDb Dataset Files
 IMDb data files :
 - title.akas.tsv.gz:  (8 x 37476209)  Contains alternative titles, regions, languages, and attributes for IMDb titles.
 - title.basics.tsv.gz: (9 x 10234938)  Provides fundamental details about IMDb titles, including type, primary title, and genres.
@@ -156,8 +160,9 @@ Attributes  :
 - primaryProfession (array of strings) – the top-3 professions of the person
 - knownForTitles (array of tconsts) – titles for a person
 
-# 3.	Database Design 
-
+## <a name="3_Database_Design"></a> 3 Database Design
+### <a name="3_._1_Entity_Relationship_ER_Diagram"></a> 3.1 Entity-Relationship (ER) Diagram
+The provided IMDb data is currently unnormalized. To address this, we have developed an entity-relationship diagram for our IMDb relational database, which is depicted in the following illustration.
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8c33143-cd84-4afd-9c98-30d58adc88ad)
 
 # 4.	Prepare the IMDB Data to build the database.
