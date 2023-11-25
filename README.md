@@ -159,7 +159,8 @@ Attributes  :
 Feature Pre-processing
 
 The Feature Pre-processing of IMDB data is done using python. The IMDB_Feature_Pre-processing.py reads in the 7 data files and does the feature preprocessing of the IMDb data. After which, the desired set of tables are output as tab-separate-value (tsv) files.
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/097dcb10-b3cd-47e4-97cb-9e16b2a8f613)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/f9977c23-eccb-463b-bd1f-331f0de6664d)
+
 
 # 5.	Database Schema
 ### 5.1 Build MySQL database
