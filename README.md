@@ -152,6 +152,9 @@ Attributes  :
 - knownForTitles (array of tconsts) – titles for a person
 
 # 3.	Database Design 
+
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8c33143-cd84-4afd-9c98-30d58adc88ad)
+
 # 4.	Prepare the IMDB Data to build the database.
 Feature Pre-processing
 
@@ -194,18 +197,28 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/830fbeff-8db4-4e8f-8bf9-1836d82c13c7)
 
 ## 5.2 Below are the final created tables in our database:
- ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/1b3096ad-0a4a-4774-999b-e2adaf03fe8b)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9caabb10-b974-4075-a64f-ba7bae146244)
 
-## 5.3 Each table includes required columns, indexes, Foreign Keys, Triggers:
- ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/27ff5980-ef20-4e26-a04a-7a723ad1e4c6)
+## 5.3 Each table includes required columns, indexes, Foreign Keys, Triggers, Views:
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/dff7d747-226a-4d8a-b325-eddd39258ecb)
 
 ## 5.4 All the Stored procedures created
 - Using imdb_StoredProceduresCreation.sql
   
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b31f0570-0dae-432c-9a5c-f5a6dfb47a91) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/25cbe354-c40e-4317-9aa1-33841b135acd)
 
+## 5.5 All the views 
+All the views for SQL queries created using imdb_ViewsCreation.sql
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/531553c5-cc3c-45b9-a9e6-30831a35b3df)
 
-# 6.	SQL Queries:
+# 6.	Logical schema
+
+After creating a new schema and loading all the new datasets we have obtain the logical schema illustrated below
+
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9847d097-cbfc-4390-b31b-e09e4c184e66)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/5816fc25-72f7-40c8-84b1-5b8132767d25)
+
+# 7. SQL Queries:
 
 After creating and loading data into the database, we can now pose queries to it. In the file imdb_sqlQueries.sql we consider more than 40 questions and answer them by querying the IMDb database. 
 
