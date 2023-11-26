@@ -23,18 +23,21 @@
      
 4. [Prepare the IMDb Data to Build the Database](#4_Prepare_the_IMDb_Data_to_Build_the_Database)
    
-6. [Database Schema](#5_Database_Schema)
+5. [Database Schema](#5_Database_Schema)
    - [5.1 Build MySQL Database](#5_._1_Build_MySQL_Database)
    - [5.2 Final Created Tables in Our Database](#5_._2_Final_Created_Tables_in_Our_Database)
    - [5.3 Table Includes Required Columns, Indexes, Foreign Keys, Triggers, Views](#5_._3_Table_Includes_Required_Columns_Indexes_Foreign_Keys_Triggers_Views)
    - [5.4 All the Stored Procedures Created](#5_._4_All_the_Stored_Procedures_Created)
    - [5.5 All the Views Created](#5_._5_All_the_Views_Created)
 
-7. [Logical Schema](#6_Logical_Schema)
+6. [Logical Schema](#6_Logical_Schema)
 
-8. [SQL Queries](#7_SQL_Queries)
+7. [SQL Queries](#7_SQL_Queries)
 
-9. [Normal Forms](#8_Normal_Forms)
+8. [Normal Forms](#8_Normal_Forms)
+   - [8.1 Functional Dependencies](#8_._1_Functional_Dependencies)
+   - [8.2 Multivalued Dependencies (MVDs)](#8_._2_Multivalued_Dependencies_(MVDs))
+   - [8.3 Normal Form Analysis](#8_._3_Normal_Form_Analysis)
 
 10. [Visualizations](#9_Visualizations)
 
