@@ -413,36 +413,10 @@ https://drive.google.com/drive/folders/1enQdPtuilduCgRHh5nHBHcLGXgpNPEPL?usp=sha
 
 ## <a name="12_Tools_Used"></a> 12 Tools Used
 
-- For Datasets extraction: Python (Jupyter Notebook)
+- For Datasets extraction (Extract, Transform, Load (ETL)): Python (Jupyter Notebook)
 - For ER Diagram: 
 - For Feature Preprocessing: Python (Jupyter Notebook)
-- For SQL Schema and Queries: SQL (MySQL Workbench)
+- For SQL Schema and Queries (MySQL database modeling) : SQL (MySQL Workbench)
 - For Logical Schema: MySQL Workbench
 - For Visualization and analysis: Python (Jupyter Notebook) Python (Jupyter Notebook)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## <a name="Database_Tools/Technologies"></a> Database Tools/Technologies
-
-MySQL Workbench: 
-- A comprehensive tool for MySQL database modeling.
-
-Jupyter Notebook:
-- Extract, Transform, Load (ETL) with Python
-- Python for Data Visualization
