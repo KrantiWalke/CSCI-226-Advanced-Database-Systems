@@ -39,15 +39,15 @@
    - [8.2 Multivalued Dependencies (MVDs)](#8_._2_Multivalued_Dependencies_(MVDs))
    - [8.3 Normal Form Analysis](#8_._3_Normal_Form_Analysis)
 
-10. [Visualizations](#9_Visualizations)
+9. [Visualizations](#9_Visualizations)
 
-11. [Analytics/Analysis](#10_Analytics_Analysis)
+10. [Analytics/Analysis](#10_Analytics_Analysis)
 
-12. [11 Summary](11_Summary)
+11. [Summary](#11_Summary)
 
-13. [All Dataset Links](#11_All_Dataset_Links)
+12. [All Dataset Links](#12_All_Dataset_Links)
 
-14.  [Tools Used](#12_Tools_Used)
+13.  [Tools Used](#13_Tools_Used)
 
 
 ## <a name="1_Introduction"></a> 1 Introduction
