@@ -66,7 +66,6 @@ In this project, we embark on a journey to construct a MySQL database leveraging
 - Establishing the MySQL database.
 - Populating the database with the dataset.
 - Implementing SQL schema including:
-- 
       - Tables creation           
       - Key Definitions per tables
       - Referential Integrity Constraints per table
@@ -78,6 +77,7 @@ In this project, we embark on a journey to construct a MySQL database leveraging
       - Boyce-Codd Normal Form 
       - 4th Normal Form.
 - Engaging in various SQL queries, from basic to complex, to interrogate the IMDb data.
+- Creating Views for certain Queries
 - Conducting in-depth data exploration and visualization using Python.
 - Interesting insights within data using supporting queries.
 
@@ -198,8 +198,10 @@ To build the IMDB MySQL database we followed the below steps:
 
 ### 5.1.1	Install MySQL workbench: 
 https://dev.mysql.com/doc/workbench/en/wb-installing-windows.html
+
 ### 5.1.2	Creating a new MySQL connection: 
 https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html
+
 ### 5.1.3	Create IMDb database in MySQL
 a)	Create a schema and set INFILE ACCESS:
 
@@ -218,7 +220,9 @@ b)	Use the schema to create a table in the database:
   
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d8c5e9d0-4c2f-49cc-8495-b2687ee2f097)
 
-c)	Create a trigger for each table operation: imdb_TriggereCreation.sql
+c)	Create a trigger for each table operation: 
+
+- Using imdb_TriggereCreation.sql
 
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ee378623-de6c-4fd1-b8b0-a67d6ec8f250)
 
@@ -237,11 +241,13 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
 
 ## <a name="5_._2_Final_Created_Tables_in_Our_Database"></a> 5.2 Final Created Tables in Our Database
 
+- Using imdb_TableCreation.sql
+  
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9caabb10-b974-4075-a64f-ba7bae146244)
 
 ## <a name="5_._3_Table_Includes_Required_Columns_Indexes_Foreign_Keys_Triggers_Views"></a> 5.3 Table Includes Required Columns, Indexes, Foreign Keys, Triggers, Views
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/dff7d747-226a-4d8a-b325-eddd39258ecb)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/0fcff150-11ac-4b8c-a118-66d7e86b3314)
 
 ## <a name="5_._4_All_the_Stored_Procedures_Created"></a> 5.4 All the Stored Procedures Created
 
@@ -251,7 +257,7 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
 
 ## <a name="5_._5_All_the_Views_Created"></a> 5.5 All the Views Created
 
-All the views for SQL queries created using imdb_ViewsCreation.sql
+- All the views for SQL queries created using imdb_ViewsCreation.sql
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/531553c5-cc3c-45b9-a9e6-30831a35b3df)
 
@@ -340,28 +346,60 @@ Some Good queries from imdb_sqlQueries.sql :
  
 ## <a name="8_Normal_Forms"></a> 8 Normal Forms
 
-8.1 Functional Dependencies
+## <a name="8_._1_Functional_Dependencies"></a> 8.1 Functional Dependencies
+
 A functional dependency defines how the values in one set of attributes uniquely determine the values in another set of attributes. Below are some functional dependencies defined:
 
-Serial No	Table Name	Functional Dependencies
-1	Movie	movieID -> primaryTitle, originalTitle, isAdult, releaseYear, runtimeMinutes, averageRating, numVotes
-2	Series	seriesID -> primaryTitle, originalTitle, isAdult, startYear, averageRating, numVotes
-3	Episode	episodeID -> seasonNumber, episodeNumber, primaryTitle, originalTitle, isAdult, startYear
-4	Episode Alias	•	(episodeID, ordering, title, region) -> isOriginalTitle
-•	(episodeID, ordering, region) -> title
-5	Movie Alias	•	(movieID, ordering, title, region) -> isOriginalTitle
-•	(movieID, ordering, region) -> title
-7	Series Alias	•	seriesID, ordering, title, region -> isOriginalTitle
-•	(seriesID, ordering, region) -> title
-8	Actor	actorID -> primaryName, birthYear, deathYear, gender
-9	Director	directorID -> primaryName, birthYear, deathYear
-10	Writer	writerID -> primaryName, birthYear, deathYear
-11	movie_director_relation	(movieID, ordering, directorID) → no dependent attributes
-12	movie_writer_relation	(movieID, ordering, writerID) → no dependent attributes
-13	movie_actor_relation	(movieID, ordering, actorID) → characters
-14	series_director_relation	(seriesID, ordering, directorID) → no dependent attributes
-15	series_writer_relation	(seriesID, ordering, writerID) → no dependent attributes
-16	series_actor_relation	(seriesID, ordering, actorID) → characters
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/a81ce38d-13b7-4321-b8e4-4d3a37cffb65)
+
+## <a name="8_._2_Multivalued_Dependencies_(MVDs)"></a> 8.2 Multivalued Dependencies (MVDs)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/22f92f0f-5fd1-4aa8-9733-4249578f2e41)
+
+## <a name="8_._3_Normal_Form_Analysis"></a> 8.3 Normal Form Analysis
+
+Normal forms are a set of rules or guidelines that define the structure of a relational database. These rules are 
+designed to ensure that a database is well-organized, efficient, and avoids certain types of data anomalies. The 
+normalization process involves breaking down large tables into smaller, related tables, and establishing 
+relationships between them.
+
+Normal forms analysis for our database is as follows:
+
+- A. movie, series, episode, actor, director, writer:
+      – 1NF (First Normal Form): All attributes are atomic. Each table has its primary key as the sole determinant for other attributes satisfying the 1NF requirement.
+      – 2NF (Second Normal Form): The tables are in 1NF and have composite keys, and the non-key attributes are fully functionally dependent on the primary keys. There are no partial dependencies. Therefore, the tables satisfy the 2NF requirement.
+      – 3NF (Third Normal Form): The tables are in 3NF as it is already in 2NF and all the columns in the tables are functionally dependent only on the primary key. No transitive dependencies are present, where a non-key attribute depends on another non-key attribute.
+      – BCNF (Boyce-Codd Normal Form): As no non-trivial dependencies are present on any candidate key, the tables are present in BCNF.
+      – 4NF (Fourth Normal Form): The tables are in BCNF and there are no non-trivial multivalued dependencies.
+      
+- B. episode_alias, movie_alias, series_alias:
+      – 1NF: All Attributes are atomic, and each table has its primary key (e.g., (episodeID, ordering)) as the sole determinant, meeting the 1NF requirement.
+      – 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
+      – 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
+      – BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
+      – 4NF: The tables are in BCNF and have no non-trivial multivalued dependencies satisfying the requirements of 4NF.
+
+- C. movie_director_relation, movie_writer_relation, movie_actor_relation, series_director_relation,series_writer_relation, series_actor_relation:
+      – 1NF: These tables also use composite keys and are designed to represent many-to-many relationships.Functional dependencies are directly on the composite keys.
+      – 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
+      – 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
+      – BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
+      – 4NF: They are in 4NF since multivalued dependencies follow the candidate keys.
+
+- D. known_for_titles Tables (actor_known_for_titles, writer_known_for_titles, director_known_for_titles,) and genre Tables ( movie_genre, series_genre):
+      – The tables are in 1NF, 2NF, 3NF and BCNF as all attributes are atomic.
+      – No partial dependencies are present.
+      – No transitive dependencies are present.
+      – No non-trivial dependencies are present on any candidate key. 
+      – There are multivalued dependencies present. 
+      – However, they exhibit multivalued dependencies based on their primary keys and no non-trivial multivalued dependencies are present. Hence, the tables are in 4NF.
+
+
+In conclusion, all tables in our database schema are structured to meet the requirements of 3NF, BCNF, and 4NF. 
+They are designed to minimize redundancy and ensure data integrity, particularly in handling many-to-many 
+relationships and multivalued dependencies. This design is crucial for maintaining a normalized and efficient 
+database.
+
+
 
 ## <a name="9_Visualizations"></a> 9 Visualizations
 
