@@ -414,7 +414,7 @@ https://drive.google.com/drive/folders/1enQdPtuilduCgRHh5nHBHcLGXgpNPEPL?usp=sha
 ## <a name="12_Tools_Used"></a> 12 Tools Used
 
 - For Datasets extraction (Extract, Transform, Load (ETL)): Python (Jupyter Notebook)
-- For ER Diagram: 
+- For ER Diagram: http://Draw.io
 - For Feature Preprocessing: Python (Jupyter Notebook)
 - For SQL Schema and Queries (MySQL database modeling) : SQL (MySQL Workbench)
 - For Logical Schema: MySQL Workbench
