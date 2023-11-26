@@ -253,21 +253,23 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
 
 - Using imdb_StoredProceduresCreation.sql
   
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/cbbd95b4-b1d6-4531-8be8-bd7a6c693e40)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b2786f12-9e77-4581-a185-981cff9b4e28)
 
 ## <a name="5_._5_All_the_Views_Created"></a> 5.5 All the Views Created
 
 - All the views for SQL queries created using imdb_ViewsCreation.sql
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/531553c5-cc3c-45b9-a9e6-30831a35b3df)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9f511c01-7b01-403e-ae34-9f0f35e1360d)
 
 ## <a name="6_Logical_Schema"></a> 6 Logical Schema
 
 After creating a new schema and loading all the new datasets we have obtain the logical schema illustrated below
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9847d097-cbfc-4390-b31b-e09e4c184e66)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/ca8342d7-2618-405e-a066-b834321a333c)
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/5816fc25-72f7-40c8-84b1-5b8132767d25)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/bf061524-7419-4a2a-a03a-4ab03d64f6b0)
 
 ## <a name="7_SQL_Queries"></a> 7 SQL Queries
 
@@ -402,7 +404,7 @@ In conclusion, all tables in our database schema are structured to meet the requ
 
 We have saved some of the queries in CSV files in a folder named QueryResultedCSV
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/46b40ab6-b06a-49e5-8864-43a8223a67ca)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/6d733ac6-26ee-49f1-85c2-1df11ce7cc23)
 
 We read these csv files using pandas library in python. 
 
@@ -413,19 +415,19 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 1)	No. of movies directed by the director and in which genre alphabetically by name and highest count as per genre?
 
 (Query No. 4 From Section 7)
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d8adf07f-1668-4561-96d3-7c0b484bb8d4)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3830e950-c2e0-45fb-9519-89ed2cd0fd5b)
 
 2)	Top 10 movies on basis of region
 
 (Query No. 5 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b4c886c3-ea7a-42a1-a091-f9a5b677c7f7)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/12979753-8fc7-4d6c-af70-0f30c5ed2388)
 
 3)	First 50 entries WriterName according to their series and their genres.
 
 (Query No. 6 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8da336e2-75bf-44e3-9305-4a45e5c74e50) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/afcdd670-e175-4ca0-84a5-e29b8c952e6c)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8d80d586-f617-4a7b-b886-ed67b248360b)
 
 4)	Count of movies in each genre, according to the highest first HAVING movies greater than 20000.
 
