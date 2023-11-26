@@ -69,9 +69,9 @@ In this project, we embark on a journey to construct a MySQL database leveraging
    - Tables creation           
    - Key Definitions per tables
    - Referential Integrity Constraints per table
-      - Triggers for each table
-      - Stored Procedures for each table
-      - Loading the dataset into tables
+   - Triggers for each table
+   - Stored Procedures for each table
+   - Loading the dataset into tables
 - Includes the Functional Dependencies and any Multi-Valued Dependencies for your database and state whether they are free from violations for:
    - 3rd Normal form 
    - Boyce-Codd Normal Form 
@@ -213,8 +213,8 @@ b)	Use the schema to create a table in the database:
 
 - Using imdb_TableCreation.sql
 - Includes:
-      – Key Definitions
-      – Referential Integrity Constraints
+   - Key Definitions
+   - Referential Integrity Constraints
   
 - Example: Movie dataset
   
@@ -365,39 +365,36 @@ relationships between them.
 Normal forms analysis for our database is as follows:
 
 - A. movie, series, episode, actor, director, writer:
-      – 1NF (First Normal Form): All attributes are atomic. Each table has its primary key as the sole determinant for other attributes satisfying the 1NF requirement.
-      – 2NF (Second Normal Form): The tables are in 1NF and have composite keys, and the non-key attributes are fully functionally dependent on the primary keys. There are no partial dependencies. Therefore, the tables satisfy the 2NF requirement.
-      – 3NF (Third Normal Form): The tables are in 3NF as it is already in 2NF and all the columns in the tables are functionally dependent only on the primary key. No transitive dependencies are present, where a non-key attribute depends on another non-key attribute.
-      – BCNF (Boyce-Codd Normal Form): As no non-trivial dependencies are present on any candidate key, the tables are present in BCNF.
-      – 4NF (Fourth Normal Form): The tables are in BCNF and there are no non-trivial multivalued dependencies.
+   - 1NF (First Normal Form): All attributes are atomic. Each table has its primary key as the sole determinant for other attributes satisfying the 1NF requirement.
+   - 2NF (Second Normal Form): The tables are in 1NF and have composite keys, and the non-key attributes are fully functionally dependent on the primary keys. There are no partial dependencies. Therefore, the tables satisfy the 2NF requirement.
+   - 3NF (Third Normal Form): The tables are in 3NF as it is already in 2NF and all the columns in the tables are functionally dependent only on the primary key. No transitive dependencies are present, where a non-key attribute depends on another non-key attribute.
+   - BCNF (Boyce-Codd Normal Form): As no non-trivial dependencies are present on any candidate key, the tables are present in BCNF.
+   - 4NF (Fourth Normal Form): The tables are in BCNF and there are no non-trivial multivalued dependencies.
       
 - B. episode_alias, movie_alias, series_alias:
-      – 1NF: All Attributes are atomic, and each table has its primary key (e.g., (episodeID, ordering)) as the sole determinant, meeting the 1NF requirement.
-      – 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
-      – 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
-      – BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
-      – 4NF: The tables are in BCNF and have no non-trivial multivalued dependencies satisfying the requirements of 4NF.
+   - 1NF: All Attributes are atomic, and each table has its primary key (e.g., (episodeID, ordering)) as the sole determinant, meeting the 1NF requirement.
+   - 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
+   - 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
+   - BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
+   - 4NF: The tables are in BCNF and have no non-trivial multivalued dependencies satisfying the requirements of 4NF.
 
 - C. movie_director_relation, movie_writer_relation, movie_actor_relation, series_director_relation,series_writer_relation, series_actor_relation:
-      – 1NF: These tables also use composite keys and are designed to represent many-to-many relationships.Functional dependencies are directly on the composite keys.
-      – 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
-      – 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
-      – BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
-      – 4NF: They are in 4NF since multivalued dependencies follow the candidate keys.
+   - 1NF: These tables also use composite keys and are designed to represent many-to-many relationships.Functional dependencies are directly on the composite keys.
+   - 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
+   - 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
+   -  BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
+   - 4NF: They are in 4NF since multivalued dependencies follow the candidate keys.
 
 - D. known_for_titles Tables (actor_known_for_titles, writer_known_for_titles, director_known_for_titles,) and genre Tables ( movie_genre, series_genre):
-      – The tables are in 1NF, 2NF, 3NF and BCNF as all attributes are atomic.
-      – No partial dependencies are present.
-      – No transitive dependencies are present.
-      – No non-trivial dependencies are present on any candidate key. 
-      – There are multivalued dependencies present. 
-      – However, they exhibit multivalued dependencies based on their primary keys and no non-trivial multivalued dependencies are present. Hence, the tables are in 4NF.
+   -  The tables are in 1NF, 2NF, 3NF and BCNF as all attributes are atomic.
+   -  No partial dependencies are present.
+   -  No transitive dependencies are present.
+   -  No non-trivial dependencies are present on any candidate key. 
+   -  There are multivalued dependencies present. 
+   -  However, they exhibit multivalued dependencies based on their primary keys and no non-trivial multivalued dependencies are present. Hence, the tables are in 4NF.
 
 
-In conclusion, all tables in our database schema are structured to meet the requirements of 3NF, BCNF, and 4NF. 
-They are designed to minimize redundancy and ensure data integrity, particularly in handling many-to-many 
-relationships and multivalued dependencies. This design is crucial for maintaining a normalized and efficient 
-database.
+In conclusion, all tables in our database schema are structured to meet the requirements of 3NF, BCNF, and 4NF. They are designed to minimize redundancy and ensure data integrity, particularly in handling many-to-many relationships and multivalued dependencies. This design is crucial for maintaining a normalized and efficient database.
 
 
 
