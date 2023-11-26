@@ -43,9 +43,11 @@
 
 11. [Analytics/Analysis](#10_Analytics_Analysis)
 
-12. [All Dataset Links](#11_All_Dataset_Links)
+12. [11 Summary](11_Summary)
 
-13.  [Tools Used](#12_Tools_Used)
+13. [All Dataset Links](#11_All_Dataset_Links)
+
+14.  [Tools Used](#12_Tools_Used)
 
 
 ## <a name="1_Introduction"></a> 1 Introduction
@@ -414,71 +416,71 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
 1)	No. of movies directed by the director and in which genre alphabetically by name and highest count as per genre?
 
-(Query No. 4 From Section 7)
+   - (Query No. 4 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3830e950-c2e0-45fb-9519-89ed2cd0fd5b)
 
 2)	Top 10 movies on basis of region
 
-(Query No. 5 From Section 7)
+   - (Query No. 5 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/12979753-8fc7-4d6c-af70-0f30c5ed2388)
 
 3)	First 50 entries WriterName according to their series and their genres.
 
-(Query No. 6 From Section 7)
+   - (Query No. 6 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8d80d586-f617-4a7b-b886-ed67b248360b) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/c7015e71-1671-44a2-adf2-69bc888fa5ba)
 
 
 4)	Count of movies in each genre, according to the highest first HAVING movies greater than 20000.
 
-(Query No. 7 From Section 7)
+   - (Query No. 7 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8d5f77c-3cff-48ca-971c-b5538c41d0d2)![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/2f6370bb-e7e4-4527-a1e5-3c7964c96f67)
 
 
 5)	Count the occurrences of each genre per writer
 
-(Query No. 7 From Section 7)
+   - (Query No. 7 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/59bd5981-68d2-4d8b-80c5-ee6c0a14fec7)
 
 6)	Find the total number of movies released each year:
 
-Query : SELECT releaseYear, COUNT(*) as totalMovies FROM movie GROUP BY releaseYear;
+   - Query : SELECT releaseYear, COUNT(*) as totalMovies FROM movie GROUP BY releaseYear;
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/f83245da-9ef4-4a92-89b8-473c9d300b12)
 
 
 7)	List series along with their genres
 
-Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+   - Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3e0e9ca4-3a49-4901-b08b-5f234ca0ed14)![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/a89b303f-73e9-4f2d-85ac-6353df6a71fe)
 
 
 8)	 Genre Distribution (series along with their genres)
 
-Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+   - Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/514d9052-cfd2-45cf-8bc7-fde5db550c31)
 
 9)	 What is a typical runtime for movies in each genre?
 
-(Query No. 3 From Section 7)
+   - (Query No. 3 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/f9812cc6-c597-47c1-afcf-0fc91717fc06)
 
 10)	What genres are there? How many movies are there in each genre?
 
-(Query No. 2 From Section 7)
+   - (Query No. 2 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/4e3d0c49-8a19-45f4-94c2-e3e6de0688d1)
 
 11)	How many movies are made in each genre each year?
 
-(Query No. 1 From Section 7)
+   - (Query No. 1 From Section 7)
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/69cbf519-1d3d-49bf-97ec-9e0e8af86cab)
 
@@ -491,48 +493,59 @@ As we embark on a detailed analysis of the cinematic landscape, our objective is
 
 
 - Top 10 movies on basis of region 
-(Query No. 5 From Section 7 and Fig.11 from Section.9)
+   - (Query No. 5 From Section 7 and Fig.11 from Section.9)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9507503e-80fc-4328-b951-268dd3bfaf3a)
 
 - Count the occurrences of each genre per writer 
-(Query No. 6 From Section 7 and Fig.12,13 from Section.9)
+   - (Query No. 6 From Section 7 and Fig.12,13 from Section.9)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b4903123-a8fd-4b58-b784-6ed84a68b398)
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/bccf5b8e-d262-428a-ab1c-e050579b1f15)
 
 
 - List series along with their genres 
-( Fig.19,20 from section 9)
-Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+   - ( Fig.19,20 from section 9)
+   - Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/0411ab7b-183f-4736-983b-e3688f2696d0)
 
 
 - Genre Distribution (series along with their genres) 
-( Fig.21 from Section 9)
-Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+   - ( Fig.21 from Section 9)
+   - Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/89fe4600-3c0f-4283-beea-5d1b75058f87)
 
 
 - What is a typical runtime for movies in each genre? (only consider the top 6 genres)
-(Query No. 3 From Section 7 and Fig.22 from Section 9)
+   - (Query No. 3 From Section 7 and Fig.22 from Section 9)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/80a844ab-3f9d-48c8-86a5-80fa64325170)
 
 - What genres are there? How many movies are there in each genre?
-(Query No. 2 From Section 7 and Fig.23 from Section 9)
+   - (Query No. 2 From Section 7 and Fig.23 from Section 9)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/1b52c4fc-8aa8-406e-8a93-cc9fca389275)
 
 
 - How many movies are made in each genre each year? (only consider the top 6 genres)
-(Query No. 1 From Section 7 and Fig.24 from section 9)
+   - (Query No. 1 From Section 7 and Fig.24 from section 9)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8efb126-78e2-45bb-98ff-7fee7d259a96)
 
 
-## <a name="11_All_Dataset_Links"></a> 11 All Dataset Links
+
+## <a name="11_Summary"></a> 11 Summary
+
+The IMDb Non-Commercial Datasets served as the backbone for our project, providing a comprehensive and regularly updated collection of information about movies, TV series, and the individuals involved in the industry. Leveraging subsets such as title.akas, title.basics, title.crew, title.episode, title.principals, title.ratings, and name.basics, we conducted in-depth analyses to extract meaningful insights. The datasets offered a rich array of attributes, including title details, genres, crew information, ratings, and individual profiles. Our exploration unveiled trends in movie preferences, regional variations, and the impact of genres on user ratings. We traced the careers of directors and writers, identified popular titles, and examined the dynamics of TV series episodes. The IMDb dataset's daily refresh ensured that our findings remained current. This project not only showcased the power of data-driven analysis in the entertainment domain but also highlighted the versatility and depth of the IMDb Non-Commercial Datasets as valuable resources for industry professionals and enthusiasts alike.
+
+## <a name="12_All_Dataset_Links"></a> 12 All Dataset Links
 
 https://drive.google.com/drive/folders/1enQdPtuilduCgRHh5nHBHcLGXgpNPEPL?usp=sharing
 
 
-
-## <a name="12_Tools_Used"></a> 12 Tools Used
+## <a name="13_Tools_Used"></a> 13 Tools Used
 
 - For Datasets extraction (Extract, Transform, Load (ETL)): Python (Jupyter Notebook)
 - For ER Diagram: http://Draw.io
