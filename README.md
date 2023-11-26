@@ -1,4 +1,4 @@
-# CSCI-226-Advanced-Database-Systems
+# CSCI-226 Advanced Database Systems
 ## Final Project (Fall 2023)
 
 ## Contributors:
@@ -240,6 +240,12 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
 - Using imdb_StoredProceduresCreation.sql
   
  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/830fbeff-8db4-4e8f-8bf9-1836d82c13c7)
+
+f)	Create Views for certain Queries like movire_of_brigitte_bardot or movie_directed_by_genre: 
+
+- Using imdb_viewCreation.sql
+
+  ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/577ba694-581e-4880-98e6-4ef19de556de)
 
 ## <a name="5_._2_Final_Created_Tables_in_Our_Database"></a> 5.2 Final Created Tables in Our Database
 
