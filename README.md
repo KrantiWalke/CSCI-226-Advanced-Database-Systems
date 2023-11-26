@@ -337,6 +337,29 @@ Some Good queries from imdb_sqlQueries.sql :
  
 ## <a name="8_Normal_Forms"></a> 8 Normal Forms
 
+8.1 Functional Dependencies
+A functional dependency defines how the values in one set of attributes uniquely determine the values in another set of attributes. Below are some functional dependencies defined:
+
+Serial No	Table Name	Functional Dependencies
+1	Movie	movieID -> primaryTitle, originalTitle, isAdult, releaseYear, runtimeMinutes, averageRating, numVotes
+2	Series	seriesID -> primaryTitle, originalTitle, isAdult, startYear, averageRating, numVotes
+3	Episode	episodeID -> seasonNumber, episodeNumber, primaryTitle, originalTitle, isAdult, startYear
+4	Episode Alias	•	(episodeID, ordering, title, region) -> isOriginalTitle
+•	(episodeID, ordering, region) -> title
+5	Movie Alias	•	(movieID, ordering, title, region) -> isOriginalTitle
+•	(movieID, ordering, region) -> title
+7	Series Alias	•	seriesID, ordering, title, region -> isOriginalTitle
+•	(seriesID, ordering, region) -> title
+8	Actor	actorID -> primaryName, birthYear, deathYear, gender
+9	Director	directorID -> primaryName, birthYear, deathYear
+10	Writer	writerID -> primaryName, birthYear, deathYear
+11	movie_director_relation	(movieID, ordering, directorID) → no dependent attributes
+12	movie_writer_relation	(movieID, ordering, writerID) → no dependent attributes
+13	movie_actor_relation	(movieID, ordering, actorID) → characters
+14	series_director_relation	(seriesID, ordering, directorID) → no dependent attributes
+15	series_writer_relation	(seriesID, ordering, writerID) → no dependent attributes
+16	series_actor_relation	(seriesID, ordering, actorID) → characters
+
 ## <a name="9_Visualizations"></a> 9 Visualizations
 
 We have saved some of the queries in CSV files in a folder named QueryResultedCSV
