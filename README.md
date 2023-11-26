@@ -415,73 +415,72 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 1)	No. of movies directed by the director and in which genre alphabetically by name and highest count as per genre?
 
 (Query No. 4 From Section 7)
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3830e950-c2e0-45fb-9519-89ed2cd0fd5b)
+
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3830e950-c2e0-45fb-9519-89ed2cd0fd5b)
 
 2)	Top 10 movies on basis of region
 
 (Query No. 5 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/12979753-8fc7-4d6c-af70-0f30c5ed2388)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/12979753-8fc7-4d6c-af70-0f30c5ed2388)
 
 3)	First 50 entries WriterName according to their series and their genres.
 
 (Query No. 6 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8d80d586-f617-4a7b-b886-ed67b248360b)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8d80d586-f617-4a7b-b886-ed67b248360b) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/c7015e71-1671-44a2-adf2-69bc888fa5ba)
+
 
 4)	Count of movies in each genre, according to the highest first HAVING movies greater than 20000.
 
 (Query No. 7 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/1c695425-be2c-4904-bed3-4a052cd75372) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9147397e-80c7-46b3-a862-20f51168f5d3)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8d5f77c-3cff-48ca-971c-b5538c41d0d2)![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/2f6370bb-e7e4-4527-a1e5-3c7964c96f67)
+
 
 5)	Count the occurrences of each genre per writer
 
 (Query No. 7 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8354c071-a031-4c4a-a385-ece72c3ea875)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/59bd5981-68d2-4d8b-80c5-ee6c0a14fec7)
 
 6)	Find the total number of movies released each year:
 
 Query : SELECT releaseYear, COUNT(*) as totalMovies FROM movie GROUP BY releaseYear;
 
-- a.	Total Movies Released by Decade
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/f83245da-9ef4-4a92-89b8-473c9d300b12)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/78663330-93c5-4ad1-ac83-9649773ca0cc)
-
-- b.	Trend of Movie Releases Over Decades
-
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/2bd2baa2-df12-4eb6-a54e-a6d7e7561176)
 
 7)	List series along with their genres
 
 Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/05619d11-104b-4919-ad64-096a65cc3280) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/196331d2-5ee1-421f-9ccc-9dcece004d97)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/3e0e9ca4-3a49-4901-b08b-5f234ca0ed14)![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/a89b303f-73e9-4f2d-85ac-6353df6a71fe)
+
 
 8)	 Genre Distribution (series along with their genres)
 
 Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/bbe3506a-87d3-4f27-ab08-622ed6143027)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/514d9052-cfd2-45cf-8bc7-fde5db550c31)
 
 9)	 What is a typical runtime for movies in each genre?
 
 (Query No. 3 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/4d0c6586-6aba-4d7a-93b7-48e4456404d2)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/f9812cc6-c597-47c1-afcf-0fc91717fc06)
 
 10)	What genres are there? How many movies are there in each genre?
 
 (Query No. 2 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/915944ef-0739-407f-8047-d97f675e9564)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/4e3d0c49-8a19-45f4-94c2-e3e6de0688d1)
 
 11)	How many movies are made in each genre each year?
 
 (Query No. 1 From Section 7)
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/a75b3056-936b-4d42-90be-d073e3a171b5)
+   ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/69cbf519-1d3d-49bf-97ec-9e0e8af86cab)
 
 
 
