@@ -177,7 +177,7 @@ Attributes  :
 
 The provided IMDb data is currently unnormalized. To address this, we have developed an entity-relationship diagram for our IMDb relational database, which is depicted in the following illustration.
 
-![ER](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/75faba76-b451-4c53-a401-6f3623927ccd)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/62072bb2-b05a-455f-b162-674861d68ddb)
 
 
 
@@ -188,7 +188,7 @@ Feature Pre-processing:
 
 The Feature Pre-processing of IMDB data is done using python. The IMDB_Feature_Pre-processing.py reads in the 7 data files and does the feature preprocessing of the IMDb data. After which, the desired set of tables are output as tab-separate-value (tsv) files.
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8748ec03-8c50-4877-baf8-99e0c7257725)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/4fd437e7-a881-4843-a26c-885be90c572f)
 
 We have added all the comments in the IMDB_Feature_Pre-processing.py required to understand how we have done the feature preprocessing.
 
@@ -243,17 +243,17 @@ e)	Create Stored Procedures for certain operations like Add New Movie or Get Mov
 
 - Using imdb_TableCreation.sql
   
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9caabb10-b974-4075-a64f-ba7bae146244)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/6cb1eb3c-7c53-4792-9332-cdccd528b850)
 
 ## <a name="5_._3_Table_Includes_Required_Columns_Indexes_Foreign_Keys_Triggers_Views"></a> 5.3 Table Includes Required Columns, Indexes, Foreign Keys, Triggers, Views
 
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/0fcff150-11ac-4b8c-a118-66d7e86b3314)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/da38c3b1-b0e1-4b41-9da7-883d6e3e1ca1)
 
 ## <a name="5_._4_All_the_Stored_Procedures_Created"></a> 5.4 All the Stored Procedures Created
 
 - Using imdb_StoredProceduresCreation.sql
   
-![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b31f0570-0dae-432c-9a5c-f5a6dfb47a91) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/25cbe354-c40e-4317-9aa1-33841b135acd)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/cbbd95b4-b1d6-4531-8be8-bd7a6c693e40)
 
 ## <a name="5_._5_All_the_Views_Created"></a> 5.5 All the Views Created
 
@@ -364,28 +364,28 @@ relationships between them.
 
 Normal forms analysis for our database is as follows:
 
-- A. movie, series, episode, actor, director, writer:
+- movie, series, episode, actor, director, writer:
    - 1NF (First Normal Form): All attributes are atomic. Each table has its primary key as the sole determinant for other attributes satisfying the 1NF requirement.
    - 2NF (Second Normal Form): The tables are in 1NF and have composite keys, and the non-key attributes are fully functionally dependent on the primary keys. There are no partial dependencies. Therefore, the tables satisfy the 2NF requirement.
    - 3NF (Third Normal Form): The tables are in 3NF as it is already in 2NF and all the columns in the tables are functionally dependent only on the primary key. No transitive dependencies are present, where a non-key attribute depends on another non-key attribute.
    - BCNF (Boyce-Codd Normal Form): As no non-trivial dependencies are present on any candidate key, the tables are present in BCNF.
    - 4NF (Fourth Normal Form): The tables are in BCNF and there are no non-trivial multivalued dependencies.
       
-- B. episode_alias, movie_alias, series_alias:
+- episode_alias, movie_alias, series_alias:
    - 1NF: All Attributes are atomic, and each table has its primary key (e.g., (episodeID, ordering)) as the sole determinant, meeting the 1NF requirement.
    - 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
    - 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
    - BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
    - 4NF: The tables are in BCNF and have no non-trivial multivalued dependencies satisfying the requirements of 4NF.
 
-- C. movie_director_relation, movie_writer_relation, movie_actor_relation, series_director_relation,series_writer_relation, series_actor_relation:
+- movie_director_relation, movie_writer_relation, movie_actor_relation, series_director_relation,series_writer_relation, series_actor_relation:
    - 1NF: These tables also use composite keys and are designed to represent many-to-many relationships.Functional dependencies are directly on the composite keys.
    - 2NF: The tables are in 1NF and no partial dependencies are present satisfying 2NF.
    - 3NF: The tables are in 2NF and no transitive dependencies are present satisfying the 3NF requirement.
    -  BCNF: No non-trivial dependencies are present on any candidate key, ensuring a higher level of normalization.
    - 4NF: They are in 4NF since multivalued dependencies follow the candidate keys.
 
-- D. known_for_titles Tables (actor_known_for_titles, writer_known_for_titles, director_known_for_titles,) and genre Tables ( movie_genre, series_genre):
+- known_for_titles Tables (actor_known_for_titles, writer_known_for_titles, director_known_for_titles,) and genre Tables ( movie_genre, series_genre):
    -  The tables are in 1NF, 2NF, 3NF and BCNF as all attributes are atomic.
    -  No partial dependencies are present.
    -  No transitive dependencies are present.
@@ -412,25 +412,36 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
 1)	No. of movies directed by the director and in which genre alphabetically by name and highest count as per genre?
 
+(Query No. 4 From Section 7)
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/d8adf07f-1668-4561-96d3-7c0b484bb8d4)
 
 2)	Top 10 movies on basis of region
+
+(Query No. 5 From Section 7)
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b4c886c3-ea7a-42a1-a091-f9a5b677c7f7)
 
 3)	First 50 entries WriterName according to their series and their genres.
 
+(Query No. 6 From Section 7)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8da336e2-75bf-44e3-9305-4a45e5c74e50) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/afcdd670-e175-4ca0-84a5-e29b8c952e6c)
 
 4)	Count of movies in each genre, according to the highest first HAVING movies greater than 20000.
+
+(Query No. 7 From Section 7)
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/1c695425-be2c-4904-bed3-4a052cd75372) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9147397e-80c7-46b3-a862-20f51168f5d3)
 
 5)	Count the occurrences of each genre per writer
 
+(Query No. 7 From Section 7)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/8354c071-a031-4c4a-a385-ece72c3ea875)
 
 6)	Find the total number of movies released each year:
+
+Query : SELECT releaseYear, COUNT(*) as totalMovies FROM movie GROUP BY releaseYear;
 
 - a.	Total Movies Released by Decade
 
@@ -442,21 +453,31 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
 7)	List series along with their genres
 
+Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/05619d11-104b-4919-ad64-096a65cc3280) ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/196331d2-5ee1-421f-9ccc-9dcece004d97)
 
 8)	 Genre Distribution (series along with their genres)
+
+Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/bbe3506a-87d3-4f27-ab08-622ed6143027)
 
 9)	 What is a typical runtime for movies in each genre?
 
+(Query No. 3 From Section 7)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/4d0c6586-6aba-4d7a-93b7-48e4456404d2)
 
 10)	What genres are there? How many movies are there in each genre?
 
+(Query No. 2 From Section 7)
+
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/915944ef-0739-407f-8047-d97f675e9564)
 
 11)	How many movies are made in each genre each year?
+
+(Query No. 1 From Section 7)
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/a75b3056-936b-4d42-90be-d073e3a171b5)
 
@@ -464,6 +485,44 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
 
 ## <a name="10_Analytics_Analysis"></a> 10 Analytics/Analysis
+
+As we embark on a detailed analysis of the cinematic landscape, our objective is to unravel the intricate fabric that constitutes the genre distribution across films and series, informed by regional influences and temporal trends. A lot of our focus will be on the big players like the USA and the UK to see why they're making so many hits. But it's not just about them; we'll also explore what kinds of movies and shows certain writers like to create. With some basic number-crunching and easy-to-understand charts, we'll try to make sense of how the movie business has changed from way back when movies didn't even have sound to today's big-screen blockbusters and binge-worthy series. We'll see which types of stories are told most often, how movie-making has picked up speed over the years, and how different parts of the world make their mark on what we watch.
+
+
+- Top 10 movies on basis of region 
+(Query No. 5 From Section 7 and Fig.11 from Section.9)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/9507503e-80fc-4328-b951-268dd3bfaf3a)
+
+- Count the occurrences of each genre per writer 
+(Query No. 6 From Section 7 and Fig.12,13 from Section.9)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b4903123-a8fd-4b58-b784-6ed84a68b398)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/bccf5b8e-d262-428a-ab1c-e050579b1f15)
+
+
+- List series along with their genres 
+( Fig.19,20 from section 9)
+Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/0411ab7b-183f-4736-983b-e3688f2696d0)
+
+
+- Genre Distribution (series along with their genres) 
+( Fig.21 from Section 9)
+Query: SELECT s.primaryTitle, sg.genres FROM series s JOIN series_genre sg ON s.seriesID = sg.seriesID;
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/89fe4600-3c0f-4283-beea-5d1b75058f87)
+
+
+- What is a typical runtime for movies in each genre? (only consider the top 6 genres)
+(Query No. 3 From Section 7 and Fig.22 from Section 9)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/80a844ab-3f9d-48c8-86a5-80fa64325170)
+
+- What genres are there? How many movies are there in each genre?
+(Query No. 2 From Section 7 and Fig.23 from Section 9)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/1b52c4fc-8aa8-406e-8a93-cc9fca389275)
+
+
+- How many movies are made in each genre each year? (only consider the top 6 genres)
+(Query No. 1 From Section 7 and Fig.24 from section 9)
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/b8efb126-78e2-45bb-98ff-7fee7d259a96)
 
 
 ## <a name="11_All_Dataset_Links"></a> 11 All Dataset Links
