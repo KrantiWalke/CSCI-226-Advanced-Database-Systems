@@ -40,14 +40,16 @@
    - [8.3 Normal Form Analysis](#8_._3_Normal_Form_Analysis)
 
 9. [Visualizations](#9_Visualizations)
+   - [9.1 Visualization Using Python](#9_._1_Visualization_Using_Python)
+   - [9.2 Tableau Visualizations](#9_._2_Tableau_Visualizations)
 
-10. [Analytics/Analysis](#10_Analytics_Analysis)
+11. [Analytics/Analysis](#10_Analytics_Analysis)
 
-11. [Summary](#11_Summary)
+12. [Summary](#11_Summary)
 
-12. [All Dataset Links](#12_All_Dataset_Links)
+13. [All Dataset Links](#12_All_Dataset_Links)
 
-13.  [Tools Used](#13_Tools_Used)
+14.  [Tools Used](#13_Tools_Used)
 
 
 ## <a name="1_Introduction"></a> 1 Introduction
@@ -410,6 +412,8 @@ In conclusion, all tables in our database schema are structured to meet the requ
 
 ## <a name="9_Visualizations"></a> 9 Visualizations
 
+## <a name="9.1 Visualization Using Python"></a> 9.1 Visualization Using Python
+
 We have saved some of the queries in CSV files in a folder named QueryResultedCSV
 
 ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/6d733ac6-26ee-49f1-85c2-1df11ce7cc23)
@@ -490,8 +494,19 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/69cbf519-1d3d-49bf-97ec-9e0e8af86cab)
 
+## <a name="9.2 Tableau Visualizations"></a> 9.2 Tableau Visualizations
 
+IMDB_Movie_Dataset_Insights:
 
+https://public.tableau.com/views/IMDBINSIGHTS/IMDB_Movie_Dataset_Insights?:language=en-US&:display_count=n&:origin=viz_share_link 
+
+![IMDB_Movie_Dataset_Insights](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/7aef8ec6-45a8-472e-87b9-17e92af6c297)
+
+IMDB_Series_Dataset_Insights
+
+https://public.tableau.com/views/IMDB_Series_Dataset_INsights/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+
+![IMDB Series Dataset Insights](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/596814bb-5ac5-4d91-a056-ad5394df8ce4)
 
 ## <a name="10_Analytics_Analysis"></a> 10 Analytics/Analysis
 
