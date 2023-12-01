@@ -412,7 +412,7 @@ In conclusion, all tables in our database schema are structured to meet the requ
 
 ## <a name="9_Visualizations"></a> 9 Visualizations
 
-## <a name="9.1 Visualization Using Python"></a> 9.1 Visualization Using Python
+## <a name="9_._1_Visualization_Using_Python"></a> 9.1 Visualization Using Python
 
 We have saved some of the queries in CSV files in a folder named QueryResultedCSV
 
@@ -494,7 +494,7 @@ This notebook is by no means a thorough exploration of the IMDb dataset. Its pur
 
    ![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/69cbf519-1d3d-49bf-97ec-9e0e8af86cab)
 
-## <a name="9.2 Tableau Visualizations"></a> 9.2 Tableau Visualizations
+## <a name="9_._2_Tableau_Visualizations"></a> 9.2 Tableau Visualizations
 
 IMDB_Movie_Dataset_Insights:
 
