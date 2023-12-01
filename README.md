@@ -405,6 +405,8 @@ Normal forms analysis for our database is as follows:
    -  There are multivalued dependencies present. 
    -  However, they exhibit multivalued dependencies based on their primary keys and no non-trivial multivalued dependencies are present. Hence, the tables are in 4NF.
 
+![image](https://github.com/KrantiWalke/CSCI-226-Advanced-Database-Systems/assets/72568005/90c6068e-06fd-4cab-8e76-6ac79efb7844)
+
 
 In conclusion, all tables in our database schema are structured to meet the requirements of 3NF, BCNF, and 4NF. They are designed to minimize redundancy and ensure data integrity, particularly in handling many-to-many relationships and multivalued dependencies. This design is crucial for maintaining a normalized and efficient database.
 
