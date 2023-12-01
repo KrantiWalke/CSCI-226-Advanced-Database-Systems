@@ -573,5 +573,4 @@ https://drive.google.com/drive/folders/1enQdPtuilduCgRHh5nHBHcLGXgpNPEPL?usp=sha
 - For Feature Preprocessing: Python (Jupyter Notebook)
 - For SQL Schema and Queries (MySQL database modeling) : SQL (MySQL Workbench)
 - For Logical Schema: MySQL Workbench
-- For Visualization and analysis: Python (Jupyter Notebook) Python (Jupyter Notebook)
-
+- For Visualization and analysis: Python (Jupyter Notebook) and Tableau Public
